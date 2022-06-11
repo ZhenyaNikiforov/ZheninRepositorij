@@ -1,0 +1,33 @@
+nav {
+    background-color: #390000;
+}
+.hlebnyie_kroshki {
+    list-style-type: none;
+    padding: 0;
+    text-indent: 7px;
+}
+.hlebnaya_kroshka {
+    display: inline;
+    color: white;
+    font-family: FiraSans;
+    font-weight: 300;
+    font-size: 18px;
+}
+.hlebnaya_kroshka:before {
+    content: "/ ";
+}
+.ssyilka_hlebnoj_kroshki {
+    text-decoration: none;
+    color: white;
+}
+.ssyilka_hlebnoj_kroshki:focus-visible {
+    outline-style: solid;
+    outline-color: white;
+    outline-offset: 0px;
+    outline-width: 2px;
+    background-color: white;
+    color: black;
+}
+#pervaya_kroshka:before {
+    content: "";
+}

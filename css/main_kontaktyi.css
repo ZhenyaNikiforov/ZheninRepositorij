@@ -1,0 +1,149 @@
+.razdelKontaktyi {
+    background-color: red;
+    margin: 0;
+    padding: 0;
+    min-height: 515px;
+    display: flex;
+    font-family: FiraSans;
+    color: #f9f9f9;
+}
+.kontaktyi_1 {
+    background-color: #2ebd59;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.zagolov_kontaktyi_1 {
+    font-size: 24px;
+    font-weight: 600;
+    width: 62.5%;
+    margin-top: 134px;
+    margin-left: 26.25%;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+.abzacs_kontaktyi_1 {
+    font-weight: 300;
+    font-size: 36px;
+    letter-spacing: -0.028em;
+    margin-top: 30px;
+    margin-left: 26.25%;
+    margin-right: auto;
+    margin-bottom: 14px;
+    width: 62.5%;
+}
+.btn_kontaktyi_1 {
+    display: block;
+    box-sizing: border-box;
+    margin-top: auto;
+    margin-left: 26.25%;
+    margin-right: auto;
+    margin-bottom: 145px;
+    width: 280px;
+    height: 56px;
+    border-radius: 28px;
+    border-width: 2px;
+    border-style: solid;
+    background-color: transparent;
+    border-color: #f9f9f9;
+    color: #f9f9f9;
+    font-family: FiraSans;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    padding: 0px;
+}
+.btn_kontaktyi_1:focus-visible {
+    outline-color: yellow;
+    outline-width: 1px;
+    outline-offset: 3px;
+    outline-style: solid;
+}
+.kontaktyi_2 {
+    background-color: #282b2f;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.zagolov_kontaktyi_2 {
+    font-size: 24px;
+    font-weight: 600;
+    width: 56.25%;
+    margin-top: 134px;
+    margin-left: 7.5%;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+.abzacs_kontaktyi_2 {
+    font-weight: 300;
+    font-size: 36px;
+    letter-spacing: -0.028px;
+    margin-top: 30px;
+    margin-left: 7.5%;
+    margin-right: auto;
+    margin-bottom: 14px;
+    width: 56.25%;
+}
+.btn_kontaktyi_2 {
+    display: block;
+    box-sizing: border-box;
+    margin-top: auto;
+    margin-left: 7.5%;
+    margin-right: auto;
+    margin-bottom: 145px;
+    width: 280px;
+    height: 56px;
+    border-radius: 28px;
+    border-width: 2px;
+    border-style: solid;
+    background-color: transparent;
+    border-color: #f9f9f9;
+    color: #f9f9f9;
+    font-family: FiraSans;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    padding: 0px;
+}
+.btn_kontaktyi_2:focus-visible {
+    outline-color: yellow;
+    outline-width: 1px;
+    outline-offset: 3px;
+    outline-style: solid;
+}
+@media screen and (max-width: 1200px) {
+    .abzacs_kontaktyi_1,
+    .abzacs_kontaktyi_2 {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .razdelKontaktyi {
+        display: block;
+        min-height: 0;
+    }
+    .kontaktyi_1,
+    .kontaktyi_2 {
+        width: auto;
+        display: block;
+        padding-top: 7%;
+        padding-bottom: 7%;
+    }
+    .zagolov_kontaktyi_1,
+    .zagolov_kontaktyi_2 {
+        width: auto;
+        margin: 0;
+        text-align: center;
+    }
+    .abzacs_kontaktyi_1,
+    .abzacs_kontaktyi_2 {
+        width: 90%;
+        margin: 5% auto 0;
+        text-align: center;
+        font-size: 24px;
+    }
+    .btn_kontaktyi_1,
+    .btn_kontaktyi_2 {
+        margin: 5% auto 0;
+    }
+}
