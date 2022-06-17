@@ -1,0 +1,117 @@
+.razdelLyizhi {
+    display: flex;
+    background-color: #3f729b;
+}
+.lyizhi_text {
+    width: 50%;
+    padding-top: 7.5625%;
+}
+.lyizhi_icon {
+    width: 25%;
+}
+.lyizhi_zero {
+    width: 25%;
+}
+.lyizhi_zagolov {
+    font-family: FiraSans;
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0 auto 0 26.625%;
+    color: #f9f9f9;
+}
+.lyizhi_abz {
+    font-family: FiraSans;
+    font-weight: 300;
+    font-size: 36px;
+    color: #f9f9f9;
+    letter-spacing: -0.028em;
+    margin: 3.75% auto 0 26.625%;
+    width: 63%;
+}
+.lyizhi_btn {
+    width: 280px;
+    box-sizing: border-box;
+    height: 56px;
+    border-radius: 28px;
+    border-width: 2px;
+    border-color: #ffffff;
+    background-color: #3f729b;
+    font-family: FiraSans;
+    color: #f9f9f9;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    border-style: solid;
+    margin-left: 26.625%;
+    margin-top: 4.25%;
+    display: block;
+}
+.lyizhi_btn:focus-visible {
+    outline-color: yellow;
+    outline-width: 1px;
+    outline-offset: 3px;
+    outline-style: solid;
+}
+@media screen and (max-width: 1600px){
+    .lyizhi_zagolov {
+        font-size: 1.5vw;
+    }
+    .lyizhi_abz {
+        font-size: 2.25vw;
+    }
+    .lyizhi_btn {
+        width: 17.5vw;
+        height: 3.5vw;
+        font-size: 1.125vw;
+        border-radius: 1.75vw;
+        border-width: 0.125vw;
+    }
+}
+@media screen and (max-width: 800px){
+    .razdelLyizhi {
+        flex-wrap: wrap;
+    }
+    .lyizhi_text {
+        width: 100%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .lyizhi_icon {
+        width: 50%;
+    }
+    .lyizhi_zero {
+        width: 50%;
+    }
+    .lyizhi_zagolov {
+        width: auto;
+        margin: 0 5% 5% 5%;
+        font-size: 16px;
+    }
+    .lyizhi_abz {
+        width: auto;
+        margin: 0 5% 5% 5%;
+        font-size: 24px;
+    }
+    .lyizhi_btn {
+        margin: 0 auto;
+        width: 280px;
+        height: 56px;
+        border-radius: 28px;
+        border-width: 2px;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 400px){
+    .razdelLyizhi {
+        display: block;
+    }
+    .lyizhi_text {
+        width: auto;
+    }
+    .lyizhi_icon {
+        width: auto;
+    }
+    .lyizhi_zero {
+        display: none;
+    }
+}
