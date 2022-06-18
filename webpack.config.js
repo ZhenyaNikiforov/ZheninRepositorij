@@ -13,7 +13,7 @@ module.exports = {
   plugins: [
        
        new HtmlWebpackPlugin({
-           template: './iskhodnik/index.html'
+           template: './iskhodnik/inindex.html'
        }),
        new HtmlWebpackPlugin({
            filename: 'kontaktyi.html',

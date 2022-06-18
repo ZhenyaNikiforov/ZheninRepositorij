@@ -16,7 +16,7 @@ function otkryit_zakryit () {
 
 knopka_menu.addEventListener('click', otkryit_zakryit);
 
-import html from './index.html';
+import html from './inindex.html';
 import htm from './kontaktyi.html';
 import ht from './tovaryi.html';
 import h from './uslugi.html';
