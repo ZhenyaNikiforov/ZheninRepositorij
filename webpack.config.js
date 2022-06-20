@@ -5,10 +5,10 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
     entry: './iskhodnik/menu.js',
     mode: 'production',
-    devtool: 'inline-source-map',
-    devServer: {
-    static: './gotovo',
-  },
+    //devtool: 'inline-source-map',
+    /*devServer: {
+    static: './gotovo'
+  },*/
     
     output: {
         path: path.resolve(__dirname, 'gotovo'),
