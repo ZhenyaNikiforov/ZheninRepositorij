@@ -37,7 +37,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(ttf)$/i,
+                test: /\.(ttf|eot|woff|woff2)$/i,
                 use: [{
                     loader: 'file-loader',
                     options: {esModule: false, name: './[name].[ext]', outputPath: 'shr'}

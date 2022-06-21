@@ -1038,46 +1038,46 @@ nav {
 @font-face {
   font-family: FiraSans;
   font-weight: 100;
-  src: url(shr/FiraSans-Thin.ttf);
+  src: url(shr/FiraSans-Thin.ttf), url(shr/FiraSans-Thin.eot), url(shr/FiraSans-Thin.woff), url(shr/FiraSans-Thin.woff2);
 }
 @font-face {
   font-family: FiraSans;
   font-weight: 200;
-  src: url(shr/FiraSans-ExtraLight.ttf);
+  src: url(shr/FiraSans-ExtraLight.ttf), url(shr/FiraSans-ExtraLight.eot), url(shr/FiraSans-ExtraLight.woff), url(shr/FiraSans-ExtraLight.woff2);
 }
 @font-face {
   font-family: FiraSans;
   font-weight: 300;
-  src: url(shr/FiraSans-Light.ttf);
+  src: url(shr/FiraSans-Light.ttf), url(shr/FiraSans-Light.eot), url(shr/FiraSans-Light.woff), url(shr/FiraSans-Light.woff2);
 }
 @font-face {
   font-family: FiraSans;
   font-weight: 400;
-  src: url(shr/FiraSans-Regular.ttf);
+  src: url(shr/FiraSans-Regular.ttf), url(shr/FiraSans-Regular.eot), url(shr/FiraSans-Regular.woff), url(shr/FiraSans-Regular.woff2);
 }
 @font-face {
   font-family: FiraSans;
   font-weight: 500;
-  src: url(shr/FiraSans-Medium.ttf);
+  src: url(shr/FiraSans-Medium.ttf), url(shr/FiraSans-Medium.eot), url(shr/FiraSans-Medium.woff), url(shr/FiraSans-Medium.woff2);
 }
 @font-face {
   font-family: FiraSans;
   font-weight: 600;
-  src: url(shr/FiraSans-SemiBold.ttf);
+  src: url(shr/FiraSans-SemiBold.ttf), url(shr/FiraSans-SemiBold.eot), url(shr/FiraSans-SemiBold.woff), url(shr/FiraSans-SemiBold.woff2);
 }
 @font-face {
   font-family: FiraSans;
   font-weight: 700;
-  src: url(shr/FiraSans-Bold.ttf);
+  src: url(shr/FiraSans-Bold.ttf), url(shr/FiraSans-Bold.eot), url(shr/FiraSans-Bold.woff), url(shr/FiraSans-Bold.woff2);
 }
 @font-face {
   font-family: FiraSans;
   font-weight: 800;
-  src: url(shr/FiraSans-ExtraBold.ttf);
+  src: url(shr/FiraSans-ExtraBold.ttf), url(shr/FiraSans-ExtraBold.eot), url(shr/FiraSans-ExtraBold.woff), url(shr/FiraSans-ExtraBold.woff2);
 }
 @font-face {
   font-family: FiraSans;
   font-weight: 900;
-  src: url(shr/FiraSans-Black.ttf);
+  src: url(shr/FiraSans-Black.ttf), url(shr/FiraSans-Black.eot), url(shr/FiraSans-Black.woff), url(shr/FiraSans-Black.woff2);
 }
 
