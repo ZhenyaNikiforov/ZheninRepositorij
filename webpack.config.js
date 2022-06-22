@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 module.exports = {
     entry: './iskhodnik/menu.js',
@@ -61,5 +62,8 @@ module.exports = {
                 loader: 'html-loader'
             }
         ]
+    },
+    optimization: {
+        minimizer: [new CssMinimizerPlugin()]
     }
 }
