@@ -39,19 +39,23 @@ module.exports = {
         rules: [
             {
                 test: /\.(ttf|eot|woff|woff2)$/i,
-                use: [{
+                /*use: [{
                     loader: 'file-loader',
                     options: {esModule: false, name: './[name].[ext]', outputPath: 'shr'}
                 }],
-                type: 'javascript/auto'
+                type: 'javascript/auto'*/
+                type: 'asset/resource',
+                generator: {filename: 'shr/[name][ext]'}
             },
             {
                 test: /\.(png|jpe?g|gif)$/i,
-                use: [{
+                /*use: [{
                           loader: 'file-loader',
                           options: {esModule: false, name: './[name].[ext]', outputPath: 'imag'}
                      }],
-                type: 'javascript/auto'
+                type: 'javascript/auto'*/
+                type: 'asset/resource',
+                generator: {filename: 'imag/[name][ext]'}
             },
             {
                 test: /\.less$/i,

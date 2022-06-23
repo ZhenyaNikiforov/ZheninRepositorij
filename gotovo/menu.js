@@ -1,115 +1,10 @@
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
-
-/***/ 776:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "imag/gl.png";
-
-/***/ }),
-
-/***/ 351:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "imag/head.png";
-
-/***/ }),
-
-/***/ 888:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "imag/ikonka3.png";
-
-/***/ }),
-
-/***/ 673:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "imag/ikonkafejsbuka.png";
-
-/***/ }),
-
-/***/ 114:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "imag/ikonkainternet.png";
-
-/***/ }),
-
-/***/ 399:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "imag/ikonkatwittera.png";
-
-/***/ }),
-
-/***/ 955:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "imag/menu.png";
-
-/***/ }),
-
-/***/ 582:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "imag/play.png";
-
-/***/ }),
-
-/***/ 23:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "imag/red.png";
-
-/***/ }),
-
-/***/ 424:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "imag/sec.png";
-
-/***/ }),
-
-/***/ 822:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "imag/sec2.png";
-
-/***/ }),
-
-/***/ 62:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "imag/sec3.png";
-
-/***/ }),
-
-/***/ 3:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "imag/sec4.png";
-
-/***/ }),
-
-/***/ 550:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "imag/sky.png";
-
-/***/ }),
-
-/***/ 125:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "imag/vector.png";
-
-/***/ }),
 
 /***/ 91:
 /***/ ((module) => {
 
-"use strict";
 
 
 module.exports = function (url, options) {
@@ -136,6 +31,83 @@ module.exports = function (url, options) {
 
   return url;
 };
+
+/***/ }),
+
+/***/ 654:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "imag/gl.png";
+
+/***/ }),
+
+/***/ 95:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "imag/head.png";
+
+/***/ }),
+
+/***/ 108:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "imag/menu.png";
+
+/***/ }),
+
+/***/ 284:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "imag/play.png";
+
+/***/ }),
+
+/***/ 951:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "imag/red.png";
+
+/***/ }),
+
+/***/ 975:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "imag/sec.png";
+
+/***/ }),
+
+/***/ 542:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "imag/sec2.png";
+
+/***/ }),
+
+/***/ 262:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "imag/sec3.png";
+
+/***/ }),
+
+/***/ 596:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "imag/sec4.png";
+
+/***/ }),
+
+/***/ 880:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "imag/sky.png";
+
+/***/ }),
+
+/***/ 129:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "imag/vector.png";
 
 /***/ })
 
@@ -258,9 +230,8 @@ module.exports = function (url, options) {
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-"use strict";
 
 // EXTERNAL MODULE: ./node_modules/html-loader/dist/runtime/getUrl.js
 var getUrl = __webpack_require__(91);
@@ -268,17 +239,17 @@ var getUrl_default = /*#__PURE__*/__webpack_require__.n(getUrl);
 ;// CONCATENATED MODULE: ./iskhodnik/inindex.html
 // Imports
 
-var ___HTML_LOADER_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(351), __webpack_require__.b);
-var ___HTML_LOADER_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(955), __webpack_require__.b);
-var ___HTML_LOADER_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(23), __webpack_require__.b);
-var ___HTML_LOADER_IMPORT_3___ = new URL(/* asset import */ __webpack_require__(424), __webpack_require__.b);
-var ___HTML_LOADER_IMPORT_4___ = new URL(/* asset import */ __webpack_require__(3), __webpack_require__.b);
-var ___HTML_LOADER_IMPORT_5___ = new URL(/* asset import */ __webpack_require__(62), __webpack_require__.b);
-var ___HTML_LOADER_IMPORT_6___ = new URL(/* asset import */ __webpack_require__(822), __webpack_require__.b);
-var ___HTML_LOADER_IMPORT_7___ = new URL(/* asset import */ __webpack_require__(550), __webpack_require__.b);
-var ___HTML_LOADER_IMPORT_8___ = new URL(/* asset import */ __webpack_require__(776), __webpack_require__.b);
-var ___HTML_LOADER_IMPORT_9___ = new URL(/* asset import */ __webpack_require__(582), __webpack_require__.b);
-var ___HTML_LOADER_IMPORT_10___ = new URL(/* asset import */ __webpack_require__(125), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(95), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(108), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(951), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_3___ = new URL(/* asset import */ __webpack_require__(975), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_4___ = new URL(/* asset import */ __webpack_require__(596), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_5___ = new URL(/* asset import */ __webpack_require__(262), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_6___ = new URL(/* asset import */ __webpack_require__(542), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_7___ = new URL(/* asset import */ __webpack_require__(880), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_8___ = new URL(/* asset import */ __webpack_require__(654), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_9___ = new URL(/* asset import */ __webpack_require__(284), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_10___ = new URL(/* asset import */ __webpack_require__(129), __webpack_require__.b);
 // Module
 var ___HTML_LOADER_REPLACEMENT_0___ = getUrl_default()(___HTML_LOADER_IMPORT_0___);
 var ___HTML_LOADER_REPLACEMENT_1___ = getUrl_default()(___HTML_LOADER_IMPORT_1___);
@@ -297,9 +268,9 @@ var code = "<!DOCTYPE html> <html lang=\"ru\"> <head> <meta charset=\"UTF-8\"> <
 ;// CONCATENATED MODULE: ./iskhodnik/kontaktyi.html
 // Imports
 
-var kontaktyi_HTML_LOADER_IMPORT_0_ = new URL(/* asset import */ __webpack_require__(351), __webpack_require__.b);
-var kontaktyi_HTML_LOADER_IMPORT_1_ = new URL(/* asset import */ __webpack_require__(955), __webpack_require__.b);
-var kontaktyi_HTML_LOADER_IMPORT_2_ = new URL(/* asset import */ __webpack_require__(125), __webpack_require__.b);
+var kontaktyi_HTML_LOADER_IMPORT_0_ = new URL(/* asset import */ __webpack_require__(95), __webpack_require__.b);
+var kontaktyi_HTML_LOADER_IMPORT_1_ = new URL(/* asset import */ __webpack_require__(108), __webpack_require__.b);
+var kontaktyi_HTML_LOADER_IMPORT_2_ = new URL(/* asset import */ __webpack_require__(129), __webpack_require__.b);
 // Module
 var kontaktyi_HTML_LOADER_REPLACEMENT_0_ = getUrl_default()(kontaktyi_HTML_LOADER_IMPORT_0_);
 var kontaktyi_HTML_LOADER_REPLACEMENT_1_ = getUrl_default()(kontaktyi_HTML_LOADER_IMPORT_1_);
@@ -310,10 +281,10 @@ var kontaktyi_code = "<!DOCTYPE html> <html lang=\"ru\"> <head> <meta charset=\"
 ;// CONCATENATED MODULE: ./iskhodnik/tovaryi.html
 // Imports
 
-var tovaryi_HTML_LOADER_IMPORT_0_ = new URL(/* asset import */ __webpack_require__(351), __webpack_require__.b);
-var tovaryi_HTML_LOADER_IMPORT_1_ = new URL(/* asset import */ __webpack_require__(955), __webpack_require__.b);
-var tovaryi_HTML_LOADER_IMPORT_2_ = new URL(/* asset import */ __webpack_require__(550), __webpack_require__.b);
-var tovaryi_HTML_LOADER_IMPORT_3_ = new URL(/* asset import */ __webpack_require__(125), __webpack_require__.b);
+var tovaryi_HTML_LOADER_IMPORT_0_ = new URL(/* asset import */ __webpack_require__(95), __webpack_require__.b);
+var tovaryi_HTML_LOADER_IMPORT_1_ = new URL(/* asset import */ __webpack_require__(108), __webpack_require__.b);
+var tovaryi_HTML_LOADER_IMPORT_2_ = new URL(/* asset import */ __webpack_require__(880), __webpack_require__.b);
+var tovaryi_HTML_LOADER_IMPORT_3_ = new URL(/* asset import */ __webpack_require__(129), __webpack_require__.b);
 // Module
 var tovaryi_HTML_LOADER_REPLACEMENT_0_ = getUrl_default()(tovaryi_HTML_LOADER_IMPORT_0_);
 var tovaryi_HTML_LOADER_REPLACEMENT_1_ = getUrl_default()(tovaryi_HTML_LOADER_IMPORT_1_);
@@ -325,11 +296,11 @@ var tovaryi_code = "<!DOCTYPE html> <html lang=\"ru\"> <head> <meta charset=\"UT
 ;// CONCATENATED MODULE: ./iskhodnik/uslugi.html
 // Imports
 
-var uslugi_HTML_LOADER_IMPORT_0_ = new URL(/* asset import */ __webpack_require__(351), __webpack_require__.b);
-var uslugi_HTML_LOADER_IMPORT_1_ = new URL(/* asset import */ __webpack_require__(955), __webpack_require__.b);
-var uslugi_HTML_LOADER_IMPORT_2_ = new URL(/* asset import */ __webpack_require__(776), __webpack_require__.b);
-var uslugi_HTML_LOADER_IMPORT_3_ = new URL(/* asset import */ __webpack_require__(582), __webpack_require__.b);
-var uslugi_HTML_LOADER_IMPORT_4_ = new URL(/* asset import */ __webpack_require__(125), __webpack_require__.b);
+var uslugi_HTML_LOADER_IMPORT_0_ = new URL(/* asset import */ __webpack_require__(95), __webpack_require__.b);
+var uslugi_HTML_LOADER_IMPORT_1_ = new URL(/* asset import */ __webpack_require__(108), __webpack_require__.b);
+var uslugi_HTML_LOADER_IMPORT_2_ = new URL(/* asset import */ __webpack_require__(654), __webpack_require__.b);
+var uslugi_HTML_LOADER_IMPORT_3_ = new URL(/* asset import */ __webpack_require__(284), __webpack_require__.b);
+var uslugi_HTML_LOADER_IMPORT_4_ = new URL(/* asset import */ __webpack_require__(129), __webpack_require__.b);
 // Module
 var uslugi_HTML_LOADER_REPLACEMENT_0_ = getUrl_default()(uslugi_HTML_LOADER_IMPORT_0_);
 var uslugi_HTML_LOADER_REPLACEMENT_1_ = getUrl_default()(uslugi_HTML_LOADER_IMPORT_1_);
@@ -339,36 +310,6 @@ var uslugi_HTML_LOADER_REPLACEMENT_4_ = getUrl_default()(uslugi_HTML_LOADER_IMPO
 var uslugi_code = "<!DOCTYPE html> <html lang=\"ru\"> <head> <meta charset=\"UTF-8\"> <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/> <title>Nashi_uslugi</title> </head> <body> <header> <img src=\"" + uslugi_HTML_LOADER_REPLACEMENT_0_ + "\" alt=\"NaDoske\"> <a href=\"index.html\" class=\"logotype\"> <span class=\"text_logotype\"> /. </span> </a> <h1 class=\"zagolov_header\"> Amazing Dude.<br> Amazing Life.<br> </h1> <p class=\"abzacs_header\"> Welcome to the personal site of <span class=\"john\">John Doe</span>.<br> A professional skier and a musician.<br> </p> <button class=\"btn_menu\" id=\"knopka_menu\"> <span class=\"icon_menu\" id=\"ikonka\"> <img src=\"" + uslugi_HTML_LOADER_REPLACEMENT_1_ + "\" alt=\"menu\"> </span> <span class=\"container_zakryit_menu ne_viden_container_zakryit_menu\" id=\"krestik\"> <span class=\"zakryit_menu\"> + </span> </span> <span class=\"text_menu\"> MENU </span> </button> <ul class=\"list_menu ne_vidno_menu\" id=\"menu\"> <li><a href=\"index.html\">Glavnaya</a></li> <li><a href=\"tovaryi.html\">Tovaryi</a></li> <li><a href=\"uslugi.html\">Uslugi</a></li> <li><a href=\"kontaktyi.html\">Kontaktyi</a></li> </ul> </header> <nav> <ul class=\"hlebnyie_kroshki\"> <li class=\"hlebnaya_kroshka\" id=\"pervaya_kroshka\"><a href=\"index.html\" class=\"ssyilka_hlebnoj_kroshki\">Na glavnujy</a></li> <li class=\"hlebnaya_kroshka\"><a href=\"uslugi.html\" class=\"ssyilka_hlebnoj_kroshki\">Uslugi</a></li> </ul> </nav> <main> <section class=\"razdelZatyilok\"> <section class=\"zatyilok_zero\"></section> <section class=\"zatyilok_kontent\"> <img src=\"" + uslugi_HTML_LOADER_REPLACEMENT_2_ + "\" alt=\"zatyilok\"> <section class=\"zatyilok_text\"> <h2 class=\"zagol_zatyil_2\">SELF-EFFACING RAGE</h2> <h3 class=\"zagol_zatyil_3\">FT. FASCINATING COLLISION</h3> <p class=\"zatyilok_abzacs\"> Director: James G. Rohrer<br> Production Company: Sycamore<br> Producer: Laura S. Carlton<br> Executive Producer: Jack M. Heckart<br> </p> <button class=\"zatyilok_button\"> CLICK TO PLAY <span class=\"icon_button\"> <img src=\"" + uslugi_HTML_LOADER_REPLACEMENT_3_ + "\" alt=\"play\"> </span> </button> </section> </section> </section> </main> <footer> <section class=\"column_left\"> <h2 class=\"zagolov_column_left\">AMAZING DUDE</h2> <h2 class=\"zagolov_column_left_2\">AMAZING LIFE</h2> <p class=\"abzacs_column_left\"> Mauris ornare lobortis arcu, at sodales dolor finibus nec. In convallis risus ligula, bibendum sagittis ante cursus vitae. Donec ornare, dui nec sagittis imperdiet, nunc eros dignissim augue, ut aliquam nibh felis sit amet leo. Vivamus eu tincidunt tellus. Vestibulum quis condimentum lectus, nec aliquet lectus. Duis sollicitudin facilisis dui ac aliquet. Phasellus tempor sollicitudin augue, id hendrerit enim gravida non. Integer consequat vel arcu quis dictum. Vestibulum viverra commodo nunc eu pellentesque. Phasellus in scelerisque elit, eu ultricies mauris. </p> <span class=\"bottom_column_left\"> Ⓒ2015. all rights reserved. </span> </section> <section class=\"column_middle\"> <h2 class=\"zagolov_column_middle\"> CONTACT ME </h2> <p class=\"abzacs_column_middle_1\"> 1242 Crestview Terrace Artesia Wells, TX 78001 </p> <p class=\"abzacs_column_middle_2\"> Phone: 830-676-7974 Email: halo@sitename.com </p> <h2 class=\"zagolov_column_middle_2\"> FOLLOW ME ON </h2> <ul class=\"list_column_middle\"> <li><a href=\"#\">FACEBOOK</a></li> <li><a href=\"#\">TWITTER</a></li> <li><a href=\"#\">INSTAGRAM</a></li> <li><a href=\"#\">SPOTIFY</a></li> </ul> </section> <section class=\"column_right\"> <h2 class=\"zagolov_1_column_right\">SUBSCRIBE</h2> <p class=\"abzacs_column_right\"> Duis sollicitudin facilisis dui ac aliquet. Phasellus tempor sollicitudin augue, id hendrerit enim gravida non. Integer consequat vel arcu quis dictum. Vestibulum viverra commodo nunc eu pellentesque. </p> <button class=\"btn_column_right\"> ENTER YOUR EMAIL ADDRESS <span class=\"icon_btn_right_column\"> <img src=\"" + uslugi_HTML_LOADER_REPLACEMENT_4_ + "\" alt=\"icon\"> </span> </button> <h2 class=\"zagolov_2_column_right\">SPONSOR</h2> <section class=\"logotype_section_right_column\"> <span class=\"logo_column_right\">LOGO</span> <span class=\"logo_column_right\">LOGO</span> <span class=\"logo_column_right\">LOGO</span> </section> </section> </footer> </body> </html>";
 // Exports
 /* harmony default export */ const uslugi = ((/* unused pure expression or super */ null && (uslugi_code)));
-// EXTERNAL MODULE: ./iskhodnik/images/gl.png
-var gl = __webpack_require__(776);
-// EXTERNAL MODULE: ./iskhodnik/images/head.png
-var head = __webpack_require__(351);
-// EXTERNAL MODULE: ./iskhodnik/images/ikonka3.png
-var ikonka3 = __webpack_require__(888);
-// EXTERNAL MODULE: ./iskhodnik/images/ikonkafejsbuka.png
-var ikonkafejsbuka = __webpack_require__(673);
-// EXTERNAL MODULE: ./iskhodnik/images/ikonkainternet.png
-var ikonkainternet = __webpack_require__(114);
-// EXTERNAL MODULE: ./iskhodnik/images/ikonkatwittera.png
-var ikonkatwittera = __webpack_require__(399);
-// EXTERNAL MODULE: ./iskhodnik/images/menu.png
-var menu = __webpack_require__(955);
-// EXTERNAL MODULE: ./iskhodnik/images/play.png
-var play = __webpack_require__(582);
-// EXTERNAL MODULE: ./iskhodnik/images/red.png
-var red = __webpack_require__(23);
-// EXTERNAL MODULE: ./iskhodnik/images/sec.png
-var sec = __webpack_require__(424);
-// EXTERNAL MODULE: ./iskhodnik/images/sec2.png
-var sec2 = __webpack_require__(822);
-// EXTERNAL MODULE: ./iskhodnik/images/sec3.png
-var sec3 = __webpack_require__(62);
-// EXTERNAL MODULE: ./iskhodnik/images/sec4.png
-var sec4 = __webpack_require__(3);
-// EXTERNAL MODULE: ./iskhodnik/images/sky.png
-var sky = __webpack_require__(550);
-// EXTERNAL MODULE: ./iskhodnik/images/vector.png
-var vector = __webpack_require__(125);
 ;// CONCATENATED MODULE: ./iskhodnik/menu.js
 let knopka_menu;
 let samo_menu;
@@ -393,21 +334,21 @@ knopka_menu.addEventListener('click', otkryit_zakryit);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*import gl from './images/gl.png';
+import head from './images/head.png';
+import ikonka3 from './images/ikonka3.png';
+import ikonkaf from './images/ikonkafejsbuka.png';
+import ikonkai from './images/ikonkainternet.png';
+import ikonkat from './images/ikonkatwittera.png';
+import menu from './images/menu.png';
+import play from './images/play.png';
+import red from './images/red.png';
+import sec from './images/sec.png';
+import sec2 from './images/sec2.png';
+import sec3 from './images/sec3.png';
+import sec4 from './images/sec4.png';
+import sky from './images/sky.png';
+import vector from './images/vector.png';*/
 
 
 })();
