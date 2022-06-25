@@ -2,6 +2,24 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const fs = require('fs');
+
+function generateHtmlPlugin (pathToFiles) {
+    const arrayHtmlFiles = fs.readdirSync(path.resolve(__dirname, pathToFiles));
+    const arrayHtmlPlugins = arrayHtmlFiles.map(function (item) {
+        const parts = item.split('.');
+        const name = parts[0];
+        const extension = parts[1];
+        const newPlug = new HtmlWebpackPlugin ({
+            filename: `${name}.html`,
+            template: `./iskhodnik/htmlFiles/${name}.html`
+        });
+        return newPlug;
+    });
+    return arrayHtmlPlugins;
+}
+
+const htmlPlugins = generateHtmlPlugin('./iskhodnik/htmlFiles');
 
 module.exports = {
     entry: './iskhodnik/menu.js',
@@ -18,23 +36,24 @@ module.exports = {
     
   plugins: [
        
-       new HtmlWebpackPlugin({
-           template: './iskhodnik/inindex.html'
+       /*new HtmlWebpackPlugin({
+           template: './iskhodnik/htmlFiles/inindex.html'
        }),
        new HtmlWebpackPlugin({
            filename: 'kontaktyi.html',
-           template: './iskhodnik/kontaktyi.html'
+           template: './iskhodnik/htmlFiles/kontaktyi.html'
        }),
       new HtmlWebpackPlugin({
           filename: 'tovaryi.html',
-          template: './iskhodnik/tovaryi.html'
+          template: './iskhodnik/htmlFiles/tovaryi.html'
       }),
       new HtmlWebpackPlugin({
           filename: 'uslugi.html',
-          template: './iskhodnik/uslugi.html'
-      }),
+          template: './iskhodnik/htmlFiles/uslugi.html'
+      }),*/
        new MiniCssExtractPlugin()
-   ],
+   ].concat(htmlPlugins),
+    
     module: {
         rules: [
             {

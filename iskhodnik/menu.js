@@ -16,10 +16,10 @@ function otkryit_zakryit () {
 
 knopka_menu.addEventListener('click', otkryit_zakryit);
 
-import html from './inindex.html';
-import htm from './kontaktyi.html';
-import ht from './tovaryi.html';
-import h from './uslugi.html';
+import html from './htmlFiles/index.html';
+import htm from './htmlFiles/kontaktyi.html';
+import ht from './htmlFiles/tovaryi.html';
+import h from './htmlFiles/uslugi.html';
 
 /*import gl from './images/gl.png';
 import head from './images/head.png';
