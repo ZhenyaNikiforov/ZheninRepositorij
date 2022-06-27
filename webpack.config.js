@@ -24,10 +24,6 @@ const htmlPlugins = generateHtmlPlugin('./iskhodnik/htmlFiles');
 module.exports = {
     entry: './iskhodnik/menu.js',
     mode: 'production',
-    //devtool: 'inline-source-map',
-    /*devServer: {
-    static: './gotovo'
-  },*/
     
     output: {
         path: path.resolve(__dirname, 'gotovo'),
@@ -35,22 +31,6 @@ module.exports = {
   },
     
   plugins: [
-       
-       /*new HtmlWebpackPlugin({
-           template: './iskhodnik/htmlFiles/inindex.html'
-       }),
-       new HtmlWebpackPlugin({
-           filename: 'kontaktyi.html',
-           template: './iskhodnik/htmlFiles/kontaktyi.html'
-       }),
-      new HtmlWebpackPlugin({
-          filename: 'tovaryi.html',
-          template: './iskhodnik/htmlFiles/tovaryi.html'
-      }),
-      new HtmlWebpackPlugin({
-          filename: 'uslugi.html',
-          template: './iskhodnik/htmlFiles/uslugi.html'
-      }),*/
        new MiniCssExtractPlugin()
    ].concat(htmlPlugins),
     
@@ -58,21 +38,11 @@ module.exports = {
         rules: [
             {
                 test: /\.(ttf|eot|woff|woff2)$/i,
-                /*use: [{
-                    loader: 'file-loader',
-                    options: {esModule: false, name: './[name].[ext]', outputPath: 'shr'}
-                }],
-                type: 'javascript/auto'*/
                 type: 'asset/resource',
                 generator: {filename: 'shr/[name][ext]'}
             },
             {
                 test: /\.(png|jpe?g|gif)$/i,
-                /*use: [{
-                          loader: 'file-loader',
-                          options: {esModule: false, name: './[name].[ext]', outputPath: 'imag'}
-                     }],
-                type: 'javascript/auto'*/
                 type: 'asset/resource',
                 generator: {filename: 'imag/[name][ext]'}
             },
