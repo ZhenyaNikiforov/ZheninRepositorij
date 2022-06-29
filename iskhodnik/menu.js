@@ -21,20 +21,4 @@ import htm from './htmlFiles/kontaktyi.html';
 import ht from './htmlFiles/tovaryi.html';
 import h from './htmlFiles/uslugi.html';
 
-/*import gl from './images/gl.png';
-import head from './images/head.png';
-import ikonka3 from './images/ikonka3.png';
-import ikonkaf from './images/ikonkafejsbuka.png';
-import ikonkai from './images/ikonkainternet.png';
-import ikonkat from './images/ikonkatwittera.png';
-import menu from './images/menu.png';
-import play from './images/play.png';
-import red from './images/red.png';
-import sec from './images/sec.png';
-import sec2 from './images/sec2.png';
-import sec3 from './images/sec3.png';
-import sec4 from './images/sec4.png';
-import sky from './images/sky.png';
-import vector from './images/vector.png';*/
-
 import less from './lessDir/container.less';

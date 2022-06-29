@@ -25,6 +25,7 @@ module.exports = {
     entry: './iskhodnik/menu.js',
     mode: 'production',
     
+    
     output: {
         path: path.resolve(__dirname, 'gotovo'),
         filename: 'menu.js'
