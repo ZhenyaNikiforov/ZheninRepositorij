@@ -122,16 +122,22 @@ header {
     position: absolute;
     margin: 0;
     background-color: #4a0000;
-    list-style-type: none;
     padding: 0;
     width: 120px;
     top: calc(18.7% + 5px);
     right: calc(15.625% - 60px);
 }
-.list_menu>li {
+.podlist_menu {
+    display: block;
+    position: static;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.podlist_menu>li {
     display: block;
 }
-.list_menu>li>a {
+.podlist_menu>li>a {
     display: block;
     text-decoration: none;
     line-height: 1.8;
@@ -141,7 +147,7 @@ header {
     font-size: 18px;
     cursor: pointer;
 }
-.list_menu>li>a:focus-visible {
+.podlist_menu>li>a:focus-visible {
     outline-color: white;
     outline-style: solid;
     outline-offset: 0px;
