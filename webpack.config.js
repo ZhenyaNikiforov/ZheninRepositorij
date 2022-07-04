@@ -24,7 +24,7 @@ const htmlPlugins = generateHtmlPlugin('./iskhodnik/htmlFiles');
 module.exports = {
     entry: './iskhodnik/menu.js',
     mode: 'production',
-   /* devServer: {
+    /*devServer: {
     static: './gotovo'
   },*/
     
