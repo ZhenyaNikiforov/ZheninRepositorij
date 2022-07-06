@@ -23,10 +23,10 @@ const htmlPlugins = generateHtmlPlugin('./iskhodnik/htmlFiles');
 
 module.exports = {
     entry: './iskhodnik/menu.js',
-    mode: 'development',
-    devServer: {
+    mode: 'production',
+    /*devServer: {
     static: './gotovo'
-  },
+  },*/
     
     output: {
         path: path.resolve(__dirname, 'gotovo'),
