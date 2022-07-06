@@ -30,35 +30,52 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.zagolov_header {
-    margin: 0;
-    padding: 0;
-    color: black;
-    font-family: FiraSans-Light;
-    font-size: 72px;
-    letter-spacing: -0.027em;
-    width: 73.75%;
+.container_teksta_golovyi {
     display: block;
     position: absolute;
+    width: 73.75%;
     left: 13.125%;
     top: 39%;
 }
-.abzacs_header {
-    margin: 0;
-    padding: 0;
+.zagolov_1_golova,
+.zagolov_2_golova,
+.abzacs_1_golova,
+.abzacs_2_golova {
     color: black;
     font-family: FiraSans-Light;
-    font-size: 30px;
     letter-spacing: -0.027em;
-    line-height: 45px;
-    width: 73.75%;
-    display: block;
-    position: absolute;
-    left: 13.125%;
-    top: 59.7778%;
+}
+.zagolov_1_golova {
+    font-size: 72px;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+.zagolov_2_golova {
+    font-size: 72px;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+.abzacs_1_golova {
+    font-size: 30px;
+    line-height: 1.5;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 1.2%;
+}
+.abzacs_2_golova {
+    font-size: 30px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
 }
 .john {
-    font-family: FiraSans-Bold;
+    font-weight: bold;
 }
 .btn_menu {
     display: block;
@@ -160,12 +177,13 @@ header {
     .logotype {
         font-size: 3.75vw;
     }
-    .zagolov_header {
+    .zagolov_1_golova,
+    .zagolov_2_golova {
         font-size: 4.5vw;
     }
-    .abzacs_header {
+    .abzacs_1_golova,
+    .abzacs_2_golova {
         font-size: 1.875vw;
-        line-height: 2.8125vw;
     }
     .text_menu {
         font-size: 0.75vw;
@@ -180,14 +198,12 @@ header {
         height: 13.332%;
         font-size: 5.625vw;
     }
-    .zagolov_header {
-        top: 30%;
-        font-size: 6vw;
+    .container_teksta_golovyi {
+        top: 28%;
     }
-    .abzacs_header {
-        top: 56.2%;
-        font-size: 3.8vw;
-        line-height: 4.8vw;
+    .abzacs_1_golova,
+    .abzacs_2_golova {
+        font-size: 4vw;
     }
     .btn_menu {
         width: 7.5%;
@@ -223,12 +239,13 @@ header {
     .logotype {
         font-size: 18px;
     }
-    .zagolov_header {
-        font-size: 19.2px;
+    .zagolov_1_golova,
+    .zagolov_2_golova {
+        font-size: 14.4px;
     }
-    .abzacs_header {
-        font-size: 12.16px;
-        line-height: 15.36px;
+    .abzacs_1_golova,
+    .abzacs_2_golova {
+        font-size: 12.8px;
     }
     .zakryit_menu {
         font-size: 19px;
