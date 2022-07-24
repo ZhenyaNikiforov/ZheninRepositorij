@@ -7,39 +7,39 @@
 </head>
 <body>
     <header>
-        <img src="../images/head.png" alt="NaDoske">
-        <a href="index.html" class="logotype">
-            <span class="text_logotype">
-                /.
-            </span>
-        </a>
-        <div class="container_teksta_golovyi">
-            <h1 class="zagolov_1_golova">Amazing Dude.</h1>
-            <h2 class="zagolov_2_golova">Amazing Life.</h2>
-            <p class="abzacs_1_golova">Welcome to the personal site of <span class="john">John Doe</span>.</p>
-            <p class="abzacs_2_golova">A professional skier and a musician.</p>
+        <div class="header__content">
+           <div class="header__row-navigation">
+               <a href="index.html" class="header__logotype">/.</a>
+               <button class="header__btn-menu" id="btn">
+                   <span class="header__btn-menu-icon">
+                       <img src="../images/menu.png" alt="icon">
+                   </span>
+                   <span class="header__btn-menu-paragraph">
+                       MENU
+                   </span>
+               </button>
+               <nav class="header__navigation" id="menu">
+                   <ul>
+                       <li><a href="index.html">MAIN</a></li>
+                       <li><a href="kontaktyi.html">Kontaktyi</a></li>
+                       <li><a href="tovaryi.html">Tovaryi</a></li>
+                       <li><a href="uslugi.html">Uslugi</a></li>
+                   </ul>
+               </nav>
+           </div>
+            <h1 class="header__caption-level-1">
+                Amazing Dude.
+            </h1>
+            <h2 class="header__caption-level-2">
+                Amazing Life.
+            </h2>
+            <p class="header__paragraph-1">
+                Welcome to personal site of <span class="header__john">John Doe</span>.
+            </p>
+            <p class="header__paragraph-2">
+                A professional skier and musician.
+            </p>
         </div>
-        <button class="btn_menu" id="knopka_menu">
-            <span class="icon_menu" id="ikonka">
-                <img src="../images/menu.png" alt="menu">
-            </span>
-            <span class="container_zakryit_menu ne_viden_container_zakryit_menu" id="krestik">
-                <span class="zakryit_menu">
-                    +
-                </span>
-            </span>
-            <span class="text_menu">
-                MENU
-            </span>
-        </button>
-        <nav class="list_menu ne_vidno_menu" id="menu">
-           <ul class="podlist_menu">
-               <li><a href="index.html">Glavnaya</a></li>
-            <li><a href="tovaryi.html">Tovaryi</a></li>
-            <li><a href="uslugi.html">Uslugi</a></li>
-            <li><a href="kontaktyi.html">Kontaktyi</a></li>
-           </ul> 
-        </nav>
     </header>
     <nav class="container_hlebnyikh_kroshek">
        <ul class="hlebnyie_kroshki">

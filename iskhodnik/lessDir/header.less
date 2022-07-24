@@ -1,260 +1,157 @@
 header {
-    background-color: yellow;
-    position: relative;
-}
-.logotype {
-    display: block;
-    position: absolute;
-    width: 5%;
-    height: 8.888%;
-    background-color: #000000;
-    left: 13.125%;
-    top: 9.777%;
-    text-decoration: none;
-    font-family: FiraSans, Arial, sans-serif;
-    font-weight: bold;
-    color: #ffffff;
-    letter-spacing: -0.027em;
-    font-size: 60px;
-    cursor: pointer;
-}
-.logotype:focus-visible {
-    outline-style: solid;
-    outline-color: black;
-    outline-width: 1px;
-    outline-offset: 2px;
-}
-.text_logotype {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.container_teksta_golovyi {
-    display: block;
-    position: absolute;
-    width: 73.75%;
-    left: 13.125%;
-    top: 39%;
-}
-.zagolov_1_golova,
-.zagolov_2_golova,
-.abzacs_1_golova,
-.abzacs_2_golova {
-    color: black;
-    font-family: FiraSans, Arial, sans-serif;
-    font-weight: normal;
-    letter-spacing: -0.027em;
-}
-.zagolov_1_golova {
-    font-size: 72px;
-    line-height: 1.2;
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-}
-.zagolov_2_golova {
-    font-size: 72px;
-    line-height: 1.2;
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-}
-.abzacs_1_golova {
-    font-size: 30px;
-    line-height: 1.5;
-    padding: 0;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-top: 1.2%;
-    font-weight: normal;
-}
-.abzacs_2_golova {
-    font-size: 30px;
-    line-height: 1.5;
-    padding: 0;
-    margin: 0;
-    font-weight: normal;
-}
-.john {
-    font-weight: bold;
-}
-.btn_menu {
-    display: block;
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    border-style: none;
-    width: 5%;
-    height: 8.888%;
-    right: 13.125%;
-    top: 9.777%;
-    background-color: transparent;
-    cursor: pointer;
-}
-.btn_menu:focus-visible {
-    outline-style: solid;
-    outline-color: black;
-    outline-width: 1px;
-    outline-offset: 2px;
-}
-.icon_menu {
-    display: block;
-    position: absolute;
-    width: 33.75%;
-    top: 37.5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.ne_vidna_iconka_menu {
-    display: none;
-}
-.container_zakryit_menu {
-    display: block;
-    position: absolute;
-    top: 37.5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.ne_viden_container_zakryit_menu {
-    display: none;
-}
-.zakryit_menu {
-    display: block;
-    font-family: FiraSans, Arial, sans-serif;
-    font-weight: bold;
-    color: black;
-    font-size: 40px;
-    transform: rotate(45deg);
-}
-.text_menu {
-    display: block;
-    position: absolute;
-    left: 50%;
-    top: 71.25%;
-    transform: translate(-50%, -50%);
-    font-family: FiraSans, Arial, sans-serif;
-    font-weight: normal;
-    color: black;
-    font-size: 12px;
-}
-.list_menu {
-    display: block;
-    position: absolute;
-    margin: 0;
-    background-color: #4a0000;
-    padding: 0;
-    width: 120px;
-    top: calc(18.7% + 5px);
-    right: calc(15.625% - 60px);
-}
-.podlist_menu {
     display: block;
     position: static;
+    min-height: 750px;
+    margin: 0;
+    background-color: #5fbfc8;
+    background-image: url(../images/head.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding: 88px 0 62px;
+    font-family: FiraSans;
+}
+.header__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+.header__row-navigation {
+    display: flex;
+    margin: 0 10px;
+    padding: 0;
+    position: relative;
+}
+.header__logotype {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    display: block;
+    position: static;
+    background-color: #000000;
+    width: 80px;
+    height: 80px;
+    font-size: 60px;
+    text-align: center;
+    line-height: 1.33;
+    margin: 0 auto 0 0;
+    cursor: pointer;
+}
+.header__logotype:focus-visible {
+    outline-offset: 2px;
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: black;
+}
+.header__btn-menu {
+    border-style: none;
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+    display: block;
+    padding: 19px 0 14px 0;
+    cursor: pointer;
+}
+.header__btn-menu:focus-visible {
+    outline-offset: 2px;
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: black;
+}
+.header__btn-menu-icon {
+    display: block;
+    width: 27px;
+    margin: 0 auto;
+}
+.header__btn-menu-paragraph {
+    display: block;
+    width: auto;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: normal;
+    margin: 6px 0 0 0;
+}
+.header__navigation {
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: calc(100% + 5px);
+    width: 180px;
+    background-color: red;
+    margin: 0;
+    padding: 0;
+}
+.header__navigation_visible {
+    display: block;
+}
+.header__navigation>ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
-.podlist_menu>li {
+.header__navigation>ul>li {
     display: block;
+    margin: 0;
+    padding: 0;
 }
-.podlist_menu>li>a {
-    display: block;
+.header__navigation>ul>li>a {
     text-decoration: none;
-    line-height: 1.8;
-    text-indent: 6px;
+    font-size: 22px;
+    font-weight: bold;
     color: white;
-    font-family: FiraSans, Arial, sans-serif;
-    font-weight: normal;
-    font-size: 18px;
+    line-height: 1.8;
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
     cursor: pointer;
 }
-.podlist_menu>li>a:focus-visible {
-    outline-color: white;
+.header__navigation>ul>li>a:hover {
+    background-color: green;
+}
+.header__navigation>ul>li>a:focus-visible {
+    outline-offset: 2px;
     outline-style: solid;
-    outline-offset: 0px;
     outline-width: 1px;
+    outline-color: white;
 }
-.ne_vidno_menu {
-    display: none;
+.header__caption-level-1 {
+    font-weight: normal;
+    letter-spacing: -0.027em;
+    font-size: 72px;
+    line-height: 1.2;
+    padding: 0;
+    margin: 183px 10px 0;
 }
-@media screen and (max-width: 1600px) {
-    .logotype {
-        font-size: 3.75vw;
-    }
-    .zagolov_1_golova,
-    .zagolov_2_golova {
-        font-size: 4.5vw;
-    }
-    .abzacs_1_golova,
-    .abzacs_2_golova {
-        font-size: 1.875vw;
-    }
-    .text_menu {
-        font-size: 0.75vw;
-    }
-    .zakryit_menu {
-        font-size: 2.5vw;
-    }
+.header__caption-level-2 {
+    font-weight: normal;
+    letter-spacing: -0.027em;
+    font-size: 72px;
+    line-height: 1.2;
+    padding: 0;
+    margin: 0 10px 0;
 }
-@media screen and (max-width: 800px) {
-    .logotype {
-        width: 7.5%;
-        height: 13.332%;
-        font-size: 5.625vw;
-    }
-    .container_teksta_golovyi {
-        top: 28%;
-    }
-    .abzacs_1_golova,
-    .abzacs_2_golova {
-        font-size: 4vw;
-    }
-    .btn_menu {
-        width: 7.5%;
-        height: 13.332%;
-    }
-    .text_menu {
-        font-size: 1.125vw;
-    }
-    .zakryit_menu {
-        font-size: 3.75vw;
-    }
-    .list_menu {
-        right: 5px;
-        top: calc(23.1% + 5px);
-    }
+.header__paragraph-1 {
+    font-weight: normal;
+    letter-spacing: -0.027em;
+    font-size: 30px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 14px 10px 0;
 }
-@media screen and (max-width: 600px) {
-    .text_menu {
-        display: none;
-    }
-    .icon_menu {
-        top: 50%;
-        width: 50%;
-    }
-    .zakryit_menu {
-        font-size: 6vw;
-    }
-    .container_zakryit_menu {
-        top: 50%;
-    }
+.header__john {
+    font-weight: bold;
 }
-@media screen and (max-width: 320px) {
-    .logotype {
-        font-size: 18px;
-    }
-    .zagolov_1_golova,
-    .zagolov_2_golova {
-        font-size: 14.4px;
-    }
-    .abzacs_1_golova,
-    .abzacs_2_golova {
-        font-size: 12.8px;
-    }
-    .zakryit_menu {
-        font-size: 19px;
+.header__paragraph-2 {
+    font-weight: normal;
+    letter-spacing: -0.027em;
+    font-size: 30px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0 10px;
+}
+@media screen and (max-width: 768px) {
+    header {
+        background-image: none;
     }
 }
