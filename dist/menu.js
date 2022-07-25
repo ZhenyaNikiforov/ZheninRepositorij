@@ -34,63 +34,63 @@ module.exports = function (url, options) {
 
 /***/ }),
 
-/***/ 654:
+/***/ 89:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "imag/gl.png";
 
 /***/ }),
 
-/***/ 108:
+/***/ 265:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "imag/menu.png";
 
 /***/ }),
 
-/***/ 284:
+/***/ 668:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "imag/play.png";
 
 /***/ }),
 
-/***/ 951:
+/***/ 301:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "imag/red.png";
 
 /***/ }),
 
-/***/ 975:
+/***/ 891:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "imag/sec.png";
 
 /***/ }),
 
-/***/ 542:
+/***/ 708:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "imag/sec2.png";
 
 /***/ }),
 
-/***/ 262:
+/***/ 32:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "imag/sec3.png";
 
 /***/ }),
 
-/***/ 596:
+/***/ 520:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "imag/sec4.png";
 
 /***/ }),
 
-/***/ 880:
+/***/ 551:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "imag/sky.png";
@@ -222,18 +222,18 @@ var __webpack_exports__ = {};
 // EXTERNAL MODULE: ./node_modules/html-loader/dist/runtime/getUrl.js
 var getUrl = __webpack_require__(91);
 var getUrl_default = /*#__PURE__*/__webpack_require__.n(getUrl);
-;// CONCATENATED MODULE: ./iskhodnik/htmlFiles/index.html
+;// CONCATENATED MODULE: ./src/htmlFiles/index.html
 // Imports
 
-var ___HTML_LOADER_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(108), __webpack_require__.b);
-var ___HTML_LOADER_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(951), __webpack_require__.b);
-var ___HTML_LOADER_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(975), __webpack_require__.b);
-var ___HTML_LOADER_IMPORT_3___ = new URL(/* asset import */ __webpack_require__(596), __webpack_require__.b);
-var ___HTML_LOADER_IMPORT_4___ = new URL(/* asset import */ __webpack_require__(262), __webpack_require__.b);
-var ___HTML_LOADER_IMPORT_5___ = new URL(/* asset import */ __webpack_require__(542), __webpack_require__.b);
-var ___HTML_LOADER_IMPORT_6___ = new URL(/* asset import */ __webpack_require__(880), __webpack_require__.b);
-var ___HTML_LOADER_IMPORT_7___ = new URL(/* asset import */ __webpack_require__(654), __webpack_require__.b);
-var ___HTML_LOADER_IMPORT_8___ = new URL(/* asset import */ __webpack_require__(284), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(265), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(301), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(891), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_3___ = new URL(/* asset import */ __webpack_require__(520), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_4___ = new URL(/* asset import */ __webpack_require__(32), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_5___ = new URL(/* asset import */ __webpack_require__(708), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_6___ = new URL(/* asset import */ __webpack_require__(551), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_7___ = new URL(/* asset import */ __webpack_require__(89), __webpack_require__.b);
+var ___HTML_LOADER_IMPORT_8___ = new URL(/* asset import */ __webpack_require__(668), __webpack_require__.b);
 // Module
 var ___HTML_LOADER_REPLACEMENT_0___ = getUrl_default()(___HTML_LOADER_IMPORT_0___);
 var ___HTML_LOADER_REPLACEMENT_1___ = getUrl_default()(___HTML_LOADER_IMPORT_1___);
@@ -247,32 +247,32 @@ var ___HTML_LOADER_REPLACEMENT_8___ = getUrl_default()(___HTML_LOADER_IMPORT_8__
 var code = "<!DOCTYPE html> <html lang=\"ru\"> <head> <meta charset=\"UTF-8\"> <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/> <title>GlavStranicsa</title> </head> <body> <header> <div class=\"header__content\"> <div class=\"header__row-navigation\"> <a href=\"index.html\" class=\"header__logotype\">/.</a> <button class=\"header__btn-menu\" id=\"btn\"> <span class=\"header__btn-menu-icon\"> <img src=\"" + ___HTML_LOADER_REPLACEMENT_0___ + "\" alt=\"icon\"> </span> <span class=\"header__btn-menu-paragraph\"> MENU </span> </button> <nav class=\"header__navigation\" id=\"menu\"> <ul> <li><a href=\"index.html\">MAIN</a></li> <li><a href=\"kontaktyi.html\">Kontaktyi</a></li> <li><a href=\"tovaryi.html\">Tovaryi</a></li> <li><a href=\"uslugi.html\">Uslugi</a></li> </ul> </nav> </div> <h1 class=\"header__caption-level-1\"> Amazing Dude. </h1> <h2 class=\"header__caption-level-2\"> Amazing Life. </h2> <p class=\"header__paragraph-1\"> Welcome to personal site of <span class=\"header__john\">John Doe</span>. </p> <p class=\"header__paragraph-2\"> A professional skier and musician. </p> </div> </header> <main> <section class=\"razdelRedHunter\"> <div class=\"containerIconRedHunter\"> <img src=\"" + ___HTML_LOADER_REPLACEMENT_1___ + "\" alt=\"KrasnyiLyizhnik\"> </div> <div class=\"containerTextRedHunter\"> <div class=\"obertZagolAbzRedHun\"> <h2 class=\"zagolovRedHunter\">SED FAUCIBUS QUIS</h2> <p class=\"abzRedHunter\"> Fusce bibendum luctus massa, ut tincidunt lectus tincidunt in. Nulla tristique ipsum vitae lacus ullamcorper, at dictum nunc scelerisque. </p> </div> </div> </section> <section class=\"razdelGallery\"> <div><img src=\"" + ___HTML_LOADER_REPLACEMENT_2___ + "\" alt=\"KanDoroga\"></div> <div><img src=\"" + ___HTML_LOADER_REPLACEMENT_3___ + "\" alt=\"NaLyizhax\"></div> <div><img src=\"" + ___HTML_LOADER_REPLACEMENT_4___ + "\" alt=\"Botinok\"></div> <div><img src=\"" + ___HTML_LOADER_REPLACEMENT_5___ + "\" alt=\"Goryi\"></div> </section> <section class=\"razdelLyizhi\"> <div class=\"lyizhi_text\"> <h2 class=\"lyizhi_zagolov\">INSTAGRAM</h2> <p class=\"lyizhi_abz\"> Etiam lacus dolor, tincidunt vitae nisi in, vulputate placerat odio. Pellentesque iaculis. </p> <button class=\"lyizhi_btn\">VIEW ON INSTAGRAM VIEW ON FACEBOOK</button> </div> <div class=\"lyizhi_icon\"> <img src=\"" + ___HTML_LOADER_REPLACEMENT_6___ + "\" alt=\"Lyizhi_Palki_Botinki\"> </div> <div class=\"lyizhi_zero\"></div> </section> <section class=\"razdelZatyilok\"> <div class=\"zatyilok_zero\"></div> <div class=\"zatyilok_kontent\"> <img src=\"" + ___HTML_LOADER_REPLACEMENT_7___ + "\" alt=\"zatyilok\"> <section class=\"zatyilok_text\"> <h2 class=\"zagol_zatyil_2\">SELF-EFFACING RAGE</h2> <h3 class=\"zagol_zatyil_3\">FT. FASCINATING COLLISION</h3> <ul class=\"zatyilok_abzacs\"> <li>Director: James G. Rohrer</li> <li>Production Company: Sycamore</li> <li>Producer: Laura S. Carlton</li> <li>Executive Producer: Jack M. Heckart</li> </ul> <button class=\"zatyilok_button\"> CLICK TO PLAY GAME OVER <span class=\"icon_button\"> <img src=\"" + ___HTML_LOADER_REPLACEMENT_8___ + "\" alt=\"play\"> </span> </button> </section> </div> </section> <section class=\"razdelKontaktyi\"> <div class=\"kontaktyi_1\"> <h2 class=\"zagolov_kontaktyi_1\"> SPOTIFY </h2> <p class=\"abzacs_kontaktyi_1\"> Follow me, stream and add my songs to your Spotify playlist. </p> <button class=\"btn_kontaktyi_1\"> FOLLOW ON SPOTIFY INRI INRI ABRA KADABRA INRI INRI </button> </div> <div class=\"kontaktyi_2\"> <h2 class=\"zagolov_kontaktyi_2\"> ITUNES </h2> <p class=\"abzacs_kontaktyi_2\"> Buy and download my songs from iTunes. </p> <button class=\"btn_kontaktyi_2\"> BUY FROM ITUNES SATOR AREPO TENET OPERA ROTAS </button> </div> </section> </main> <footer> <section class=\"column_left\"> <h2 class=\"zagolov_column_left\">AMAZING DUDE</h2> <h2 class=\"zagolov_column_left_2\">AMAZING LIFE</h2> <p class=\"abzacs_column_left\"> Mauris ornare lobortis arcu, at sodales dolor finibus nec. In convallis risus ligula, bibendum sagittis ante cursus vitae. Donec ornare, dui nec sagittis imperdiet, nunc eros dignissim augue, ut aliquam nibh felis sit amet leo. Vivamus eu tincidunt tellus. Vestibulum quis condimentum lectus, nec aliquet lectus. Duis sollicitudin facilisis dui ac aliquet. Phasellus tempor sollicitudin augue, id hendrerit enim gravida non. Integer consequat vel arcu quis dictum. Vestibulum viverra commodo nunc eu pellentesque. Phasellus in scelerisque elit, eu ultricies mauris. </p> <span class=\"bottom_column_left\"> Ⓒ2015. all rights reserved. </span> </section> <section class=\"column_middle\"> <h2 class=\"zagolov_column_middle\"> CONTACT ME </h2> <p class=\"abzacs_column_middle_1\"> 1242 Crestview Terrace Artesia Wells, TX 78001 </p> <p class=\"abzacs_column_middle_2\"> Phone: 830-676-7974 Email: halo@sitename.com </p> <h2 class=\"zagolov_column_middle_2\"> FOLLOW ME ON </h2> <ul class=\"list_column_middle\"> <li class=\"elem_list_col_mid_1\"><a href=\"#\">FACEBOOK</a></li> <li class=\"elem_list_col_mid_2\"><a href=\"#\">TWITTER</a></li> <li class=\"elem_list_col_mid_3\"><a href=\"#\">INSTAGRAM</a></li> <li class=\"elem_list_col_mid_4\"><a href=\"#\">SPOTIFY</a></li> </ul> </section> <section class=\"column_right\"> <h2 class=\"zagolov_1_column_right\">SUBSCRIBE</h2> <p class=\"abzacs_column_right\"> Duis sollicitudin facilisis dui ac aliquet. Phasellus tempor sollicitudin augue, id hendrerit enim gravida non. Integer consequat vel arcu quis dictum. Vestibulum viverra commodo nunc eu pellentesque. </p> <form class=\"btn_column_right\"> <input type=\"email\" placeholder=\"ENTER YOUR EMAIL ADDRESS\" class=\"pole_btn_col_r\"> <button class=\"icon_btn_right_column\"> </button> </form> <h2 class=\"zagolov_2_column_right\">SPONSOR</h2> <div class=\"logotype_section_right_column\"> <span class=\"logo_column_right\">LOGO</span> <span class=\"logo_column_right\">LOGO</span> <span class=\"logo_column_right\">LOGO</span> </div> </section> </footer> </body> </html>";
 // Exports
 /* harmony default export */ const htmlFiles = ((/* unused pure expression or super */ null && (code)));
-;// CONCATENATED MODULE: ./iskhodnik/htmlFiles/kontaktyi.html
+;// CONCATENATED MODULE: ./src/htmlFiles/kontaktyi.html
 // Imports
 
-var kontaktyi_HTML_LOADER_IMPORT_0_ = new URL(/* asset import */ __webpack_require__(108), __webpack_require__.b);
+var kontaktyi_HTML_LOADER_IMPORT_0_ = new URL(/* asset import */ __webpack_require__(265), __webpack_require__.b);
 // Module
 var kontaktyi_HTML_LOADER_REPLACEMENT_0_ = getUrl_default()(kontaktyi_HTML_LOADER_IMPORT_0_);
 var kontaktyi_code = "<!DOCTYPE html> <html lang=\"ru\"> <head> <meta charset=\"UTF-8\"> <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/> <title>Stranicsa_kontaktov</title> </head> <body> <header> <div class=\"header__content\"> <div class=\"header__row-navigation\"> <a href=\"index.html\" class=\"header__logotype\">/.</a> <button class=\"header__btn-menu\" id=\"btn\"> <span class=\"header__btn-menu-icon\"> <img src=\"" + kontaktyi_HTML_LOADER_REPLACEMENT_0_ + "\" alt=\"icon\"> </span> <span class=\"header__btn-menu-paragraph\"> MENU </span> </button> <nav class=\"header__navigation\" id=\"menu\"> <ul> <li><a href=\"index.html\">MAIN</a></li> <li><a href=\"kontaktyi.html\">Kontaktyi</a></li> <li><a href=\"tovaryi.html\">Tovaryi</a></li> <li><a href=\"uslugi.html\">Uslugi</a></li> </ul> </nav> </div> <h1 class=\"header__caption-level-1\"> Amazing Dude. </h1> <h2 class=\"header__caption-level-2\"> Amazing Life. </h2> <p class=\"header__paragraph-1\"> Welcome to personal site of <span class=\"header__john\">John Doe</span>. </p> <p class=\"header__paragraph-2\"> A professional skier and musician. </p> </div> </header> <nav class=\"container_hlebnyikh_kroshek\"> <ul class=\"hlebnyie_kroshki\"> <li class=\"hlebnaya_kroshka\" id=\"pervaya_kroshka\"><a href=\"index.html\" class=\"ssyilka_hlebnoj_kroshki\">Na glavnujy</a></li> <li class=\"hlebnaya_kroshka\"><a href=\"kontaktyi.html\" class=\"ssyilka_hlebnoj_kroshki\">Kontaktyi</a></li> </ul> </nav> <main> <section class=\"informaciya_o_nas\"> telefon: 8-9xx-xx-xxx-xx <br> adres gorodskoj: RF, Moskva, Chistoprudnyij Bulvar, dom xxx <br> e-mail: xxxx@mail.ru <br> </section> </main> <footer> <section class=\"column_left\"> <h2 class=\"zagolov_column_left\">AMAZING DUDE</h2> <h2 class=\"zagolov_column_left_2\">AMAZING LIFE</h2> <p class=\"abzacs_column_left\"> Mauris ornare lobortis arcu, at sodales dolor finibus nec. In convallis risus ligula, bibendum sagittis ante cursus vitae. Donec ornare, dui nec sagittis imperdiet, nunc eros dignissim augue, ut aliquam nibh felis sit amet leo. Vivamus eu tincidunt tellus. Vestibulum quis condimentum lectus, nec aliquet lectus. Duis sollicitudin facilisis dui ac aliquet. Phasellus tempor sollicitudin augue, id hendrerit enim gravida non. Integer consequat vel arcu quis dictum. Vestibulum viverra commodo nunc eu pellentesque. Phasellus in scelerisque elit, eu ultricies mauris. </p> <span class=\"bottom_column_left\"> Ⓒ2015. all rights reserved. </span> </section> <section class=\"column_middle\"> <h2 class=\"zagolov_column_middle\"> CONTACT ME </h2> <p class=\"abzacs_column_middle_1\"> 1242 Crestview Terrace Artesia Wells, TX 78001 </p> <p class=\"abzacs_column_middle_2\"> Phone: 830-676-7974 Email: halo@sitename.com </p> <h2 class=\"zagolov_column_middle_2\"> FOLLOW ME ON </h2> <ul class=\"list_column_middle\"> <li class=\"elem_list_col_mid_1\"><a href=\"#\">FACEBOOK</a></li> <li class=\"elem_list_col_mid_2\"><a href=\"#\">TWITTER</a></li> <li class=\"elem_list_col_mid_3\"><a href=\"#\">INSTAGRAM</a></li> <li class=\"elem_list_col_mid_4\"><a href=\"#\">SPOTIFY</a></li> </ul> </section> <section class=\"column_right\"> <h2 class=\"zagolov_1_column_right\">SUBSCRIBE</h2> <p class=\"abzacs_column_right\"> Duis sollicitudin facilisis dui ac aliquet. Phasellus tempor sollicitudin augue, id hendrerit enim gravida non. Integer consequat vel arcu quis dictum. Vestibulum viverra commodo nunc eu pellentesque. </p> <form class=\"btn_column_right\"> <input type=\"email\" placeholder=\"ENTER YOUR EMAIL ADDRESS\" class=\"pole_btn_col_r\"> <button class=\"icon_btn_right_column\"> </button> </form> <h2 class=\"zagolov_2_column_right\">SPONSOR</h2> <div class=\"logotype_section_right_column\"> <span class=\"logo_column_right\">LOGO</span> <span class=\"logo_column_right\">LOGO</span> <span class=\"logo_column_right\">LOGO</span> </div> </section> </footer> </body> </html>";
 // Exports
 /* harmony default export */ const kontaktyi = ((/* unused pure expression or super */ null && (kontaktyi_code)));
-;// CONCATENATED MODULE: ./iskhodnik/htmlFiles/tovaryi.html
+;// CONCATENATED MODULE: ./src/htmlFiles/tovaryi.html
 // Imports
 
-var tovaryi_HTML_LOADER_IMPORT_0_ = new URL(/* asset import */ __webpack_require__(108), __webpack_require__.b);
-var tovaryi_HTML_LOADER_IMPORT_1_ = new URL(/* asset import */ __webpack_require__(880), __webpack_require__.b);
+var tovaryi_HTML_LOADER_IMPORT_0_ = new URL(/* asset import */ __webpack_require__(265), __webpack_require__.b);
+var tovaryi_HTML_LOADER_IMPORT_1_ = new URL(/* asset import */ __webpack_require__(551), __webpack_require__.b);
 // Module
 var tovaryi_HTML_LOADER_REPLACEMENT_0_ = getUrl_default()(tovaryi_HTML_LOADER_IMPORT_0_);
 var tovaryi_HTML_LOADER_REPLACEMENT_1_ = getUrl_default()(tovaryi_HTML_LOADER_IMPORT_1_);
 var tovaryi_code = "<!DOCTYPE html> <html lang=\"ru\"> <head> <meta charset=\"UTF-8\"> <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/> <title>Nashi_tovaryi</title> </head> <body> <header> <div class=\"header__content\"> <div class=\"header__row-navigation\"> <a href=\"index.html\" class=\"header__logotype\">/.</a> <button class=\"header__btn-menu\" id=\"btn\"> <span class=\"header__btn-menu-icon\"> <img src=\"" + tovaryi_HTML_LOADER_REPLACEMENT_0_ + "\" alt=\"icon\"> </span> <span class=\"header__btn-menu-paragraph\"> MENU </span> </button> <nav class=\"header__navigation\" id=\"menu\"> <ul> <li><a href=\"index.html\">MAIN</a></li> <li><a href=\"kontaktyi.html\">Kontaktyi</a></li> <li><a href=\"tovaryi.html\">Tovaryi</a></li> <li><a href=\"uslugi.html\">Uslugi</a></li> </ul> </nav> </div> <h1 class=\"header__caption-level-1\"> Amazing Dude. </h1> <h2 class=\"header__caption-level-2\"> Amazing Life. </h2> <p class=\"header__paragraph-1\"> Welcome to personal site of <span class=\"header__john\">John Doe</span>. </p> <p class=\"header__paragraph-2\"> A professional skier and musician. </p> </div> </header> <nav class=\"container_hlebnyikh_kroshek\"> <ul class=\"hlebnyie_kroshki\"> <li class=\"hlebnaya_kroshka\" id=\"pervaya_kroshka\"><a href=\"index.html\" class=\"ssyilka_hlebnoj_kroshki\">Na glavnujy</a></li> <li class=\"hlebnaya_kroshka\"><a href=\"tovaryi.html\" class=\"ssyilka_hlebnoj_kroshki\">Tovaryi</a></li> </ul> </nav> <main> <section class=\"razdelLyizhi\"> <div class=\"lyizhi_text\"> <h2 class=\"lyizhi_zagolov\">INSTAGRAM</h2> <p class=\"lyizhi_abz\"> Etiam lacus dolor, tincidunt vitae nisi in, vulputate placerat odio. Pellentesque iaculis. </p> <button class=\"lyizhi_btn\">VIEW ON INSTAGRAM</button> </div> <div class=\"lyizhi_icon\"> <img src=\"" + tovaryi_HTML_LOADER_REPLACEMENT_1_ + "\" alt=\"Lyizhi_Palki_Botinki\"> </div> <div class=\"lyizhi_zero\"></div> </section> </main> <footer> <section class=\"column_left\"> <h2 class=\"zagolov_column_left\">AMAZING DUDE</h2> <h2 class=\"zagolov_column_left_2\">AMAZING LIFE</h2> <p class=\"abzacs_column_left\"> Mauris ornare lobortis arcu, at sodales dolor finibus nec. In convallis risus ligula, bibendum sagittis ante cursus vitae. Donec ornare, dui nec sagittis imperdiet, nunc eros dignissim augue, ut aliquam nibh felis sit amet leo. Vivamus eu tincidunt tellus. Vestibulum quis condimentum lectus, nec aliquet lectus. Duis sollicitudin facilisis dui ac aliquet. Phasellus tempor sollicitudin augue, id hendrerit enim gravida non. Integer consequat vel arcu quis dictum. Vestibulum viverra commodo nunc eu pellentesque. Phasellus in scelerisque elit, eu ultricies mauris. </p> <span class=\"bottom_column_left\"> Ⓒ2015. all rights reserved. </span> </section> <section class=\"column_middle\"> <h2 class=\"zagolov_column_middle\"> CONTACT ME </h2> <p class=\"abzacs_column_middle_1\"> 1242 Crestview Terrace Artesia Wells, TX 78001 </p> <p class=\"abzacs_column_middle_2\"> Phone: 830-676-7974 Email: halo@sitename.com </p> <h2 class=\"zagolov_column_middle_2\"> FOLLOW ME ON </h2> <ul class=\"list_column_middle\"> <li class=\"elem_list_col_mid_1\"><a href=\"#\">FACEBOOK</a></li> <li class=\"elem_list_col_mid_2\"><a href=\"#\">TWITTER</a></li> <li class=\"elem_list_col_mid_3\"><a href=\"#\">INSTAGRAM</a></li> <li class=\"elem_list_col_mid_4\"><a href=\"#\">SPOTIFY</a></li> </ul> </section> <section class=\"column_right\"> <h2 class=\"zagolov_1_column_right\">SUBSCRIBE</h2> <p class=\"abzacs_column_right\"> Duis sollicitudin facilisis dui ac aliquet. Phasellus tempor sollicitudin augue, id hendrerit enim gravida non. Integer consequat vel arcu quis dictum. Vestibulum viverra commodo nunc eu pellentesque. </p> <form class=\"btn_column_right\"> <input type=\"email\" placeholder=\"ENTER YOUR EMAIL ADDRESS\" class=\"pole_btn_col_r\"> <button class=\"icon_btn_right_column\"> </button> </form> <h2 class=\"zagolov_2_column_right\">SPONSOR</h2> <div class=\"logotype_section_right_column\"> <span class=\"logo_column_right\">LOGO</span> <span class=\"logo_column_right\">LOGO</span> <span class=\"logo_column_right\">LOGO</span> </div> </section> </footer> </body> </html>";
 // Exports
 /* harmony default export */ const tovaryi = ((/* unused pure expression or super */ null && (tovaryi_code)));
-;// CONCATENATED MODULE: ./iskhodnik/htmlFiles/uslugi.html
+;// CONCATENATED MODULE: ./src/htmlFiles/uslugi.html
 // Imports
 
-var uslugi_HTML_LOADER_IMPORT_0_ = new URL(/* asset import */ __webpack_require__(108), __webpack_require__.b);
-var uslugi_HTML_LOADER_IMPORT_1_ = new URL(/* asset import */ __webpack_require__(654), __webpack_require__.b);
-var uslugi_HTML_LOADER_IMPORT_2_ = new URL(/* asset import */ __webpack_require__(284), __webpack_require__.b);
+var uslugi_HTML_LOADER_IMPORT_0_ = new URL(/* asset import */ __webpack_require__(265), __webpack_require__.b);
+var uslugi_HTML_LOADER_IMPORT_1_ = new URL(/* asset import */ __webpack_require__(89), __webpack_require__.b);
+var uslugi_HTML_LOADER_IMPORT_2_ = new URL(/* asset import */ __webpack_require__(668), __webpack_require__.b);
 // Module
 var uslugi_HTML_LOADER_REPLACEMENT_0_ = getUrl_default()(uslugi_HTML_LOADER_IMPORT_0_);
 var uslugi_HTML_LOADER_REPLACEMENT_1_ = getUrl_default()(uslugi_HTML_LOADER_IMPORT_1_);
@@ -280,7 +280,7 @@ var uslugi_HTML_LOADER_REPLACEMENT_2_ = getUrl_default()(uslugi_HTML_LOADER_IMPO
 var uslugi_code = "<!DOCTYPE html> <html lang=\"ru\"> <head> <meta charset=\"UTF-8\"> <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"/> <title>Nashi_uslugi</title> </head> <body> <header> <div class=\"header__content\"> <div class=\"header__row-navigation\"> <a href=\"index.html\" class=\"header__logotype\">/.</a> <button class=\"header__btn-menu\" id=\"btn\"> <span class=\"header__btn-menu-icon\"> <img src=\"" + uslugi_HTML_LOADER_REPLACEMENT_0_ + "\" alt=\"icon\"> </span> <span class=\"header__btn-menu-paragraph\"> MENU </span> </button> <nav class=\"header__navigation\" id=\"menu\"> <ul> <li><a href=\"index.html\">MAIN</a></li> <li><a href=\"kontaktyi.html\">Kontaktyi</a></li> <li><a href=\"tovaryi.html\">Tovaryi</a></li> <li><a href=\"uslugi.html\">Uslugi</a></li> </ul> </nav> </div> <h1 class=\"header__caption-level-1\"> Amazing Dude. </h1> <h2 class=\"header__caption-level-2\"> Amazing Life. </h2> <p class=\"header__paragraph-1\"> Welcome to personal site of <span class=\"header__john\">John Doe</span>. </p> <p class=\"header__paragraph-2\"> A professional skier and musician. </p> </div> </header> <nav class=\"container_hlebnyikh_kroshek\"> <ul class=\"hlebnyie_kroshki\"> <li class=\"hlebnaya_kroshka\" id=\"pervaya_kroshka\"><a href=\"index.html\" class=\"ssyilka_hlebnoj_kroshki\">Na glavnujy</a></li> <li class=\"hlebnaya_kroshka\"><a href=\"uslugi.html\" class=\"ssyilka_hlebnoj_kroshki\">Uslugi</a></li> </ul> </nav> <main> <section class=\"razdelZatyilok\"> <div class=\"zatyilok_zero\"></div> <div class=\"zatyilok_kontent\"> <img src=\"" + uslugi_HTML_LOADER_REPLACEMENT_1_ + "\" alt=\"zatyilok\"> <div class=\"zatyilok_text\"> <h2 class=\"zagol_zatyil_2\">SELF-EFFACING RAGE</h2> <h3 class=\"zagol_zatyil_3\">FT. FASCINATING COLLISION</h3> <ul class=\"zatyilok_abzacs\"> <li>Director: James G. Rohrer</li> <li>Production Company: Sycamore</li> <li>Producer: Laura S. Carlton</li> <li>Executive Producer: Jack M. Heckart</li> </ul> <button class=\"zatyilok_button\"> CLICK TO PLAY <span class=\"icon_button\"> <img src=\"" + uslugi_HTML_LOADER_REPLACEMENT_2_ + "\" alt=\"play\"> </span> </button> </div> </div> </section> </main> <footer> <section class=\"column_left\"> <h2 class=\"zagolov_column_left\">AMAZING DUDE</h2> <h2 class=\"zagolov_column_left_2\">AMAZING LIFE</h2> <p class=\"abzacs_column_left\"> Mauris ornare lobortis arcu, at sodales dolor finibus nec. In convallis risus ligula, bibendum sagittis ante cursus vitae. Donec ornare, dui nec sagittis imperdiet, nunc eros dignissim augue, ut aliquam nibh felis sit amet leo. Vivamus eu tincidunt tellus. Vestibulum quis condimentum lectus, nec aliquet lectus. Duis sollicitudin facilisis dui ac aliquet. Phasellus tempor sollicitudin augue, id hendrerit enim gravida non. Integer consequat vel arcu quis dictum. Vestibulum viverra commodo nunc eu pellentesque. Phasellus in scelerisque elit, eu ultricies mauris. </p> <span class=\"bottom_column_left\"> Ⓒ2015. all rights reserved. </span> </section> <section class=\"column_middle\"> <h2 class=\"zagolov_column_middle\"> CONTACT ME </h2> <p class=\"abzacs_column_middle_1\"> 1242 Crestview Terrace Artesia Wells, TX 78001 </p> <p class=\"abzacs_column_middle_2\"> Phone: 830-676-7974 Email: halo@sitename.com </p> <h2 class=\"zagolov_column_middle_2\"> FOLLOW ME ON </h2> <ul class=\"list_column_middle\"> <li class=\"elem_list_col_mid_1\"><a href=\"#\">FACEBOOK</a></li> <li class=\"elem_list_col_mid_2\"><a href=\"#\">TWITTER</a></li> <li class=\"elem_list_col_mid_3\"><a href=\"#\">INSTAGRAM</a></li> <li class=\"elem_list_col_mid_4\"><a href=\"#\">SPOTIFY</a></li> </ul> </section> <section class=\"column_right\"> <h2 class=\"zagolov_1_column_right\">SUBSCRIBE</h2> <p class=\"abzacs_column_right\"> Duis sollicitudin facilisis dui ac aliquet. Phasellus tempor sollicitudin augue, id hendrerit enim gravida non. Integer consequat vel arcu quis dictum. Vestibulum viverra commodo nunc eu pellentesque. </p> <form class=\"btn_column_right\"> <input type=\"email\" placeholder=\"ENTER YOUR EMAIL ADDRESS\" class=\"pole_btn_col_r\"> <button class=\"icon_btn_right_column\"> </button> </form> <h2 class=\"zagolov_2_column_right\">SPONSOR</h2> <div class=\"logotype_section_right_column\"> <span class=\"logo_column_right\">LOGO</span> <span class=\"logo_column_right\">LOGO</span> <span class=\"logo_column_right\">LOGO</span> </div> </section> </footer> </body> </html>";
 // Exports
 /* harmony default export */ const uslugi = ((/* unused pure expression or super */ null && (uslugi_code)));
-;// CONCATENATED MODULE: ./iskhodnik/menu.js
+;// CONCATENATED MODULE: ./src/menu.js
 let buttonMenu;
 let navMenu;
 

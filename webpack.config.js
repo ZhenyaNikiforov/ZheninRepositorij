@@ -12,24 +12,24 @@ function generateHtmlPlugin (pathToFiles) {
         const extension = parts[1];
         const newPlug = new HtmlWebpackPlugin ({
             filename: `${name}.html`,
-            template: `./iskhodnik/htmlFiles/${name}.html`
+            template: `./src/htmlFiles/${name}.html`
         });
         return newPlug;
     });
     return arrayHtmlPlugins;
 }
 
-const htmlPlugins = generateHtmlPlugin('./iskhodnik/htmlFiles');
+const htmlPlugins = generateHtmlPlugin('./src/htmlFiles');
 
 module.exports = {
-    entry: './iskhodnik/menu.js',
+    entry: './src/menu.js',
     mode: 'production',
     devServer: {
-    static: './gotovo'
+    static: './dist'
   },
     
     output: {
-        path: path.resolve(__dirname, 'gotovo'),
+        path: path.resolve(__dirname, 'dist'),
         filename: 'menu.js'
   },
     
