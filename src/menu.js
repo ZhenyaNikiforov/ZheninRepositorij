@@ -10,9 +10,9 @@ function openClose () {
 
 buttonMenu.addEventListener('click', openClose);
 
-import html from './htmlFiles/index.html';
-import htm from './htmlFiles/kontaktyi.html';
-import ht from './htmlFiles/tovaryi.html';
-import h from './htmlFiles/uslugi.html';
+import html from './htmlFiles/index.pug';
+import htm from './htmlFiles/kontaktyi.pug';
+import ht from './htmlFiles/tovaryi.pug';
+import h from './htmlFiles/uslugi.pug';
 
 import less from './lessDir/container.less';

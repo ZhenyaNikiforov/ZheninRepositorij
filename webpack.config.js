@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const fs = require('fs');
+const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin');
 
 function generateHtmlPlugin (pathToFiles) {
     const arrayHtmlFiles = fs.readdirSync(path.resolve(__dirname, pathToFiles));
@@ -12,7 +13,7 @@ function generateHtmlPlugin (pathToFiles) {
         const extension = parts[1];
         const newPlug = new HtmlWebpackPlugin ({
             filename: `${name}.html`,
-            template: `./src/htmlFiles/${name}.html`
+            template: `./src/htmlFiles/${name}.pug`
         });
         return newPlug;
     });
@@ -20,6 +21,7 @@ function generateHtmlPlugin (pathToFiles) {
 }
 
 const htmlPlugins = generateHtmlPlugin('./src/htmlFiles');
+const pugPlugin = [new HtmlWebpackPugPlugin({adjustIndent: true})];
 
 module.exports = {
     entry: './src/menu.js',
@@ -35,7 +37,7 @@ module.exports = {
     
   plugins: [
        new MiniCssExtractPlugin()
-   ].concat(htmlPlugins),
+   ].concat(htmlPlugins, pugPlugin),
     
     module: {
         rules: [
@@ -54,8 +56,9 @@ module.exports = {
                 use: [MiniCssExtractPlugin.loader, "css-loader", "less-loader"]
             },
             {
-               test: /\.html$/i,
-                loader: 'html-loader'
+              test: /\.pug$/i,
+				use: [{loader: 'html-loader'}, {loader: 'pug-html-loader', options: {exports: false}}]
+              
             }
         ]
     },
