@@ -13,14 +13,14 @@ function generateHtmlPlugin (pathToFiles) {
         const extension = parts[1];
         const newPlug = new HtmlWebpackPlugin ({
             filename: `${name}.html`,
-            template: `./src/htmlFiles/${name}.pug`
+            template: `./src/pages/${name}.pug`
         });
         return newPlug;
     });
     return arrayHtmlPlugins;
 }
 
-const htmlPlugins = generateHtmlPlugin('./src/htmlFiles');
+const htmlPlugins = generateHtmlPlugin('./src/pages');
 const pugPlugin = [new HtmlWebpackPugPlugin({adjustIndent: true})];
 
 module.exports = {
