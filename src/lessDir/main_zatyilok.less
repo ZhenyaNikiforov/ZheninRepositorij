@@ -56,24 +56,21 @@
     list-style-type: none;
 }
 .zatyilok_button {
-    margin-left: 14.5%;
-    box-sizing: content-box;
-    margin-top: 11.5%;
-    width: calc(44% - 20px);
+    margin: 11.5% auto 0 14.5%;
+    padding: 0;
+    box-sizing: border-box;
+    width: 44%;
+    min-height: 49px;
     border-width: 2px;
     border-style: solid;
     border-color: #2ebd59;
     color: #2ebd59;
     background-color: transparent;
-    padding: 11.5px 8px 11.5px 8px;
     border-radius: 24.5px;
-    font-size: 18px;
-    line-height: 1.2;
     font-family: FiraSans, Arial, sans-serif;
     font-weight: bold;
-    text-align: center;
-    position: relative;
-    display: block;
+    display: flex;
+    align-items: center;
     cursor: pointer;
 }
 .zatyilok_button:focus-visible {
@@ -82,9 +79,24 @@
     outline-offset: 3px;
     outline-style: solid;
 }
+.zatyilok-button__text {
+    width: 75%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 8px 0 8px 8px;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: start;
+}
 .icon_button {
-    display: inline-block;
-    width: 15px;
+    width: 25%;
+    margin: 0;
+    padding: 0;
+    align-self: stretch;
+    background-image: url(../images/play.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 15px auto;
 }
 @media screen and (max-width: 1600px){
     .zagol_zatyil_2 {
@@ -100,11 +112,14 @@
     .zatyilok_button {
         border-radius: 1.53125vw;
         border-width: 0.125vw;
+        min-height: 3.0625vw;
+    }
+    .zatyilok-button__text {
+        padding: 0.5vw 0 0.5vw 0.5vw;
         font-size: 1.125vw;
-        padding: 0.72vw 0.5vw 0.72vw 0.5vw;
     }
     .icon_button {
-        width: 0.9375vw;
+        background-size: 0.9375vw auto;
     }
 }
 @media screen and (max-width: 1000px) {
@@ -132,14 +147,17 @@
     }
     .zatyilok_button {
         margin: 18px auto 0;
-        width: 156px;
-        padding: 11.5px 8px 11.5px 8px;
+        width: 160px;
         border-radius: 24.5px;
         border-width: 2px;
+        min-height: 49px;
+    }
+    .zatyilok-button__text {
+        padding: 8px 0 8px 8px;
         font-size: 18px;
     }
     .icon_button {
-        width: 15px;
+        background-size: 15px auto;
     }
 }
 @media screen and (max-width: 800px) {

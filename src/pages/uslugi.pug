@@ -11,21 +11,5 @@ nav.container_hlebnyikh_kroshek
     li.hlebnaya_kroshka
       a.ssyilka_hlebnoj_kroshki(href='uslugi.html') Uslugi
 main
-  section.razdelZatyilok
-    .zatyilok_zero
-    .zatyilok_kontent
-      img(src='../images/gl.png' alt='zatyilok')
-      .zatyilok_text
-        h2.zagol_zatyil_2 SELF-EFFACING RAGE
-        h3.zagol_zatyil_3 FT. FASCINATING COLLISION
-        ul.zatyilok_abzacs
-          li Director: James G. Rohrer
-          li Production Company: Sycamore
-          li Producer: Laura S. Carlton
-          li Executive Producer: Jack M. Heckart
-        button.zatyilok_button
-          | CLICK TO PLAY
-          | 
-          span.icon_button
-            img(src='../images/play.png' alt='play')
+  include ../components/zatyilok.pug
 include ../components/footer.pug
