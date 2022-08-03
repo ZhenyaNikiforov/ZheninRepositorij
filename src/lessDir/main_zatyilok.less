@@ -56,11 +56,12 @@
     list-style-type: none;
 }
 .zatyilok_button {
+    display: block;
     margin: 11.5% auto 0 14.5%;
-    padding: 0;
     box-sizing: border-box;
     width: 44%;
     min-height: 49px;
+    padding: 8px 32px 8px 12px;
     border-width: 2px;
     border-style: solid;
     border-color: #2ebd59;
@@ -69,34 +70,20 @@
     border-radius: 24.5px;
     font-family: FiraSans, Arial, sans-serif;
     font-weight: bold;
-    display: flex;
-    align-items: center;
     cursor: pointer;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: start;
+    background-image: url(../images/play.png);
+    background-repeat: no-repeat;
+    background-size: 15px auto;
+    background-position: 93% center;
 }
 .zatyilok_button:focus-visible {
     outline-color: yellow;
     outline-width: 1px;
     outline-offset: 3px;
     outline-style: solid;
-}
-.zatyilok-button__text {
-    width: 75%;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 8px 0 8px 8px;
-    font-size: 18px;
-    line-height: 1.2;
-    text-align: start;
-}
-.icon_button {
-    width: 25%;
-    margin: 0;
-    padding: 0;
-    align-self: stretch;
-    background-image: url(../images/play.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 15px auto;
 }
 @media screen and (max-width: 1600px){
     .zagol_zatyil_2 {
@@ -113,12 +100,8 @@
         border-radius: 1.53125vw;
         border-width: 0.125vw;
         min-height: 3.0625vw;
-    }
-    .zatyilok-button__text {
-        padding: 0.5vw 0 0.5vw 0.5vw;
         font-size: 1.125vw;
-    }
-    .icon_button {
+        padding: 0.5vw 2vw 0.5vw 0.75vw;
         background-size: 0.9375vw auto;
     }
 }
@@ -151,12 +134,8 @@
         border-radius: 24.5px;
         border-width: 2px;
         min-height: 49px;
-    }
-    .zatyilok-button__text {
-        padding: 8px 0 8px 8px;
+        padding: 8px 32px 8px 12px;
         font-size: 18px;
-    }
-    .icon_button {
         background-size: 15px auto;
     }
 }
