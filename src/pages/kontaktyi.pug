@@ -1,21 +1,11 @@
-doctype html
-head
-  meta(charset='UTF-8')
-  meta(name='viewport' content='width=device-width,initial-scale=1.0')
-  title Stranicsa_kontaktov
-include ../components/header.pug
-nav.container_hlebnyikh_kroshek
-  ul.hlebnyie_kroshki
-    li#pervaya_kroshka.hlebnaya_kroshka
-      a.ssyilka_hlebnoj_kroshki(href='index.html') Na glavnujy
-    li.hlebnaya_kroshka
-      a.ssyilka_hlebnoj_kroshki(href='kontaktyi.html') Kontaktyi
-main
-  section.informaciya_o_nas
-    | telefon: 8-9xx-xx-xxx-xx 
-    br
-    |             adres gorodskoj: RF, Moskva, Chistoprudnyij Bulvar, dom xxx 
-    br
-    |             e-mail: xxxx@mail.ru 
-    br
-include ../components/footer.pug
+extends index.pug
+block bread
+  nav.container_hlebnyikh_kroshek
+    ul.hlebnyie_kroshki
+      li#pervaya_kroshka.hlebnaya_kroshka
+        a.ssyilka_hlebnoj_kroshki(href='index.html') Na glavnujy
+      li.hlebnaya_kroshka
+        a.ssyilka_hlebnoj_kroshki(href='kontaktyi.html') Kontaktyi
+block maincontent
+  main
+    include ../components/infoself.pug

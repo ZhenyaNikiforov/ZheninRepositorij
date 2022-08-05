@@ -4,53 +4,12 @@ head
   meta(name='viewport' content='width=device-width,initial-scale=1.0')
   title GlavStranicsa
 include ../components/header.pug
-main
-  section.razdelRedHunter
-    .containerIconRedHunter
-      img(src='../images/red.png' alt='KrasnyiLyizhnik')
-    .containerTextRedHunter
-      .obertZagolAbzRedHun
-        h2.zagolovRedHunter SED FAUCIBUS QUIS
-        p.abzRedHunter
-          | Fusce bibendum luctus massa,
-          | ut tincidunt lectus tincidunt in.
-          | Nulla tristique ipsum vitae lacus
-          | ullamcorper at dictum nunc
-          | scelerisque.
-  section.razdelGallery
-    div
-      img(src='../images/sec.png' alt='KanDoroga')
-    div
-      img(src='../images/sec4.png' alt='NaLyizhax')
-    div
-      img(src='../images/sec3.png' alt='Botinok')
-    div
-      img(src='../images/sec2.png' alt='Goryi')
-  section.razdelLyizhi
-    .lyizhi_text
-      h2.lyizhi_zagolov INSTAGRAM
-      p.lyizhi_abz
-        | Etiam lacus dolor, tincidunt vitae
-        | nisi in, vulputate placerat odio.
-        | Pellentesque iaculis.
-      button.lyizhi_btn VIEW ON INSTAGRAM VIEW ON FACEBOOK
-    .lyizhi_icon
-      img(src='../images/sky.png' alt='Lyizhi_Palki_Botinki')
-    .lyizhi_zero
-  include ../components/zatyilok.pug
-  section.razdelKontaktyi
-    .kontaktyi_1
-      h2.zagolov_kontaktyi_1
-        | SPOTIFY
-      p.abzacs_kontaktyi_1
-        | Follow me, stream and add my songs to your Spotify playlist.
-      button.btn_kontaktyi_1
-        | FOLLOW ON SPOTIFY INRI INRI ABRA KADABRA INRI INRI
-    .kontaktyi_2
-      h2.zagolov_kontaktyi_2
-        | ITUNES
-      p.abzacs_kontaktyi_2
-        | Buy and download my songs from iTunes.
-      button.btn_kontaktyi_2
-        | BUY FROM ITUNES SATOR AREPO TENET OPERA ROTAS
+block bread
+block maincontent
+  main
+    include ../components/redhunter.pug
+    include ../components/gallery.pug
+    include ../components/lyizhi.pug
+    include ../components/zatyilok.pug
+    include ../components/kontakt.pug
 include ../components/footer.pug

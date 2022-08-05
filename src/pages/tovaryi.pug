@@ -1,25 +1,11 @@
-doctype html
-head
-  meta(charset='UTF-8')
-  meta(name='viewport' content='width=device-width,initial-scale=1.0')
-  title Nashi_tovaryi
-include ../components/header.pug
-nav.container_hlebnyikh_kroshek
-  ul.hlebnyie_kroshki
-    li#pervaya_kroshka.hlebnaya_kroshka
-      a.ssyilka_hlebnoj_kroshki(href='index.html') Na glavnujy
-    li.hlebnaya_kroshka
-      a.ssyilka_hlebnoj_kroshki(href='tovaryi.html') Tovaryi
-main
-  section.razdelLyizhi
-    .lyizhi_text
-      h2.lyizhi_zagolov INSTAGRAM
-      p.lyizhi_abz
-        | Etiam lacus dolor, tincidunt vitae
-        | nisi in, vulputate placerat odio.
-        | Pellentesque iaculis.
-      button.lyizhi_btn VIEW ON INSTAGRAM
-    .lyizhi_icon
-      img(src='../images/sky.png' alt='Lyizhi_Palki_Botinki')
-    .lyizhi_zero
-include ../components/footer.pug
+extends index.pug
+block bread
+  nav.container_hlebnyikh_kroshek
+    ul.hlebnyie_kroshki
+      li#pervaya_kroshka.hlebnaya_kroshka
+        a.ssyilka_hlebnoj_kroshki(href='index.html') Na glavnujy
+      li.hlebnaya_kroshka
+        a.ssyilka_hlebnoj_kroshki(href='tovaryi.html') Tovaryi
+block maincontent
+  main
+    include ../components/lyizhi.pug
