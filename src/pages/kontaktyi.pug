@@ -1,10 +1,5 @@
 extends index.pug  
 block maincontent
-  nav.container_hlebnyikh_kroshek
-    ul.hlebnyie_kroshki
-      li#pervaya_kroshka.hlebnaya_kroshka
-        a.ssyilka_hlebnoj_kroshki(href='index.html') Na glavnujy
-      li.hlebnaya_kroshka
-        a.ssyilka_hlebnoj_kroshki(href='kontaktyi.html') Kontaktyi
+  +breadCrumbs('index.html', 'Na glavnujy', 'kontaktyi.html', 'Kontaktyi')
   main
     include ../components/infoself.pug

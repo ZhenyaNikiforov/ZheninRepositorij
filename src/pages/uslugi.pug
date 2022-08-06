@@ -1,10 +1,5 @@
 extends index.pug
 block maincontent
-  nav.container_hlebnyikh_kroshek
-    ul.hlebnyie_kroshki
-      li#pervaya_kroshka.hlebnaya_kroshka
-        a.ssyilka_hlebnoj_kroshki(href='index.html') Na glavnujy
-      li.hlebnaya_kroshka
-        a.ssyilka_hlebnoj_kroshki(href='uslugi.html') Uslugi
+  +breadCrumbs('index.html', 'Na glavnujy', 'uslugi.html', 'Uslugi')
   main
     include ../components/zatyilok.pug
