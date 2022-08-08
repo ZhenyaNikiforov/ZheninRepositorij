@@ -4,13 +4,7 @@ head
   meta(name='viewport' content='width=device-width,initial-scale=1.0')
   title GlavStranicsa
 include ../components/header.pug
-mixin breadCrumbs(href1, refer1, href2, refer2)
-  nav.container_hlebnyikh_kroshek
-    ul.hlebnyie_kroshki
-      li#pervaya_kroshka.hlebnaya_kroshka
-        a.ssyilka_hlebnoj_kroshki(href=href1)= refer1
-      li.hlebnaya_kroshka
-        a.ssyilka_hlebnoj_kroshki(href=href2)= refer2
+include ../components/breadCrumbs.pug
 block maincontent
   main
     include ../components/redhunter.pug
