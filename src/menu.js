@@ -15,4 +15,4 @@ import htm from './pages/kontaktyi.pug';
 import ht from './pages/tovaryi.pug';
 import h from './pages/uslugi.pug';
 
-import less from './lessDir/container.less';
+import less from './components/header/container.less';
