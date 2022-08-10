@@ -25,7 +25,6 @@ main {
 }
 
 @import '../footer/footer.less'; // исправлено
-@import 'header.less'; // Правильно
 @import '../gallery/main_gallery.less'; // исправлено
 @import '../kontakt/main_kontaktyi.less'; // исправлено
 @import '../lyizhi/main_lyizhi.less'; // исправлено
@@ -33,4 +32,199 @@ main {
 @import '../infoself/main_svyaz_s_nami.less'; // исправлено
 @import '../zatyilok/main_zatyilok.less'; // исправлено
 @import '../breadCrumbs/nav.less'; // исправлено
-@import 'shrift.less'; // Правильно
+
+@font-face {
+    font-family: FiraSans;
+    font-weight: normal;
+    src: url(../../fonts/FiraSans-Light.ttf),
+         url(../../fonts/FiraSans-Light.eot),
+         url(../../fonts/FiraSans-Light.woff),
+         url(../../fonts/FiraSans-Light.woff2);
+}
+
+@font-face {
+    font-family: FiraSans;
+    font-weight: bold;
+    src: url(../../fonts/FiraSans-Bold.ttf),
+         url(../../fonts/FiraSans-Bold.eot),
+         url(../../fonts/FiraSans-Bold.woff),
+         url(../../fonts/FiraSans-Bold.woff2);
+}
+
+header {
+    display: block;
+    position: static;
+    min-height: 750px;
+    margin: 0;
+    background-color: #5fbfc8;
+    background-image: url(../../images/head.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding: 88px 0 62px;
+    font-family: FiraSans;
+}
+.header__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+.header__row-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+    padding: 0;
+    position: relative;
+}
+.header__logotype {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    display: block;
+    position: static;
+    background-color: #000000;
+    width: 80px;
+    height: 80px;
+    font-size: 60px;
+    text-align: center;
+    line-height: 1.33;
+    cursor: pointer;
+}
+.header__logotype:focus-visible {
+    outline-offset: 2px;
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: black;
+}
+.header__btn-menu {
+    border-style: none;
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+    padding: 19px 0 16px;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: normal;
+}
+.header__btn-menu:focus-visible {
+    outline-offset: 2px;
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: black;
+}
+.header__btn-menu-gamburger {
+    display: block;
+    width: 27px;
+    height: 22px;
+    margin: 0 auto 8px;
+    padding: 0;
+    position: relative;
+}
+.header__gamburger-item-middle {
+    display: block;
+    width: 27px;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    top: 9px;
+    left: 0;
+}
+.header__gamburger-item-middle::before {
+    content: ' ';
+    display: block;
+    width: 27px;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    top: -9px;
+    left: 0;
+}
+.header__gamburger-item-middle::after {
+    content: ' ';
+    display: block;
+    width: 27px;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    top: 9px;
+    left: 0;
+}
+.header__navigation {
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: calc(100% + 5px);
+    width: 180px;
+    background-color: red;
+    margin: 0;
+    padding: 0;
+}
+.header__navigation_visible {
+    display: block;
+}
+.header__navigation>ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.header__navigation>ul>li {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.header__navigation>ul>li>a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    line-height: 1.8;
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    cursor: pointer;
+}
+.header__navigation>ul>li>a:hover {
+    background-color: green;
+}
+.header__navigation>ul>li>a:focus-visible {
+    outline-offset: 2px;
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: white;
+}
+.header__caption-level-1 {
+    font-weight: normal;
+    letter-spacing: -0.027em;
+    font-size: 72px;
+    line-height: 1.2;
+    padding: 0;
+    margin: 183px 10px 0;
+    max-width: 500px;
+}
+.header__paragraph-1 {
+    font-weight: normal;
+    letter-spacing: -0.027em;
+    font-size: 30px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 14px 10px 0;
+}
+.header__john {
+    font-weight: bold;
+}
+.header__paragraph-2 {
+    font-weight: normal;
+    letter-spacing: -0.027em;
+    font-size: 30px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0 10px;
+}
+@media screen and (max-width: 768px) {
+    header {
+        background-image: none;
+    }
+}
