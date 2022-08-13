@@ -1,28 +1,29 @@
 - const className= 'header';
 
 header
-  div(class= `${className}__content`)
-    div(class= `${className}__row-navigation`)
-      a(class= `${className}__logotype` href='index.html') /.
-      button(class= `${className}__btn-menu`)
-        div(class= `${className}__btn-menu-gamburger`)
-          span(class= `${className}__gamburger-item-middle`)
-        | MENU
-      nav(class= `${className}__navigation`)
-        ul
-          li
-            a(href='index.html') MAIN
-          li
-            a(href='kontaktyi.html') Kontaktyi
-          li
-            a(href='tovaryi.html') Tovaryi
-          li
-            a(href='uslugi.html') Uslugi
+  //div(class= `${className}__content`)
+  div(class= `${className}__row-navigation`)
+    a(class= `${className}__logotype` href='index.html') /.
+    button(class= `${className}__btn-menu`)
+      div(class= `${className}__btn-menu-gamburger`)
+        span(class= `${className}__gamburger-item-middle`)
+      | MENU
+    nav(class= `${className}__navigation`)
+      ul
+        li
+          a(href='index.html') MAIN
+        li
+          a(href='kontaktyi.html') Kontaktyi
+        li
+          a(href='tovaryi.html') Tovaryi
+        li
+          a(href='uslugi.html') Uslugi
+  div(class= `${className}__wrapper-caption`)
     h1(class= `${className}__caption-level-1`)
       | Amazing Dude. Amazing Life.
-    p(class= `${className}__paragraph-1`)
-      | Welcome to personal site of 
-      span(class= `${className}__john`) John Doe
-      | .
-    p(class= `${className}__paragraph-2`)
-      | A professional skier and musician.
+  p(class= `${className}__paragraph-1`)
+    | Welcome to personal site of 
+    span(class= `${className}__john`) John Doe
+    | .
+  p(class= `${className}__paragraph-2`)
+    | A professional skier and musician.
