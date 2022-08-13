@@ -1,14 +1,14 @@
 let buttonMenu;
 let navMenu;
 
-buttonMenu = document.getElementById('btn');
-navMenu = document.getElementById('menu');
+buttonMenu = document.getElementsByClassName('header__btn-menu');
+navMenu = document.getElementsByClassName('header__navigation');
 
 function openClose () {
-    navMenu.classList.toggle('header__navigation_visible');
+    navMenu[0].classList.toggle('header__navigation_visible');
 }
 
-buttonMenu.addEventListener('click', openClose);
+buttonMenu[0].addEventListener('click', openClose);
 
 import html from './pages/index.pug';
 import htm from './pages/kontaktyi.pug';
