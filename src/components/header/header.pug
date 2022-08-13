@@ -1,12 +1,14 @@
+- const className= 'header';
+
 header
-  .header__content
-    .header__row-navigation
-      a.header__logotype(href='index.html') /.
-      button#btn.header__btn-menu
-        div.header__btn-menu-gamburger
-          span.header__gamburger-item-middle
+  div(class= `${className}__content`)
+    div(class= `${className}__row-navigation`)
+      a(class= `${className}__logotype` href='index.html') /.
+      button(id= 'btn' class= `${className}__btn-menu`)
+        div(class= `${className}__btn-menu-gamburger`)
+          span(class= `${className}__gamburger-item-middle`)
         | MENU
-      nav#menu.header__navigation
+      nav(id= 'menu' class= `${className}__navigation`)
         ul
           li
             a(href='index.html') MAIN
@@ -16,11 +18,11 @@ header
             a(href='tovaryi.html') Tovaryi
           li
             a(href='uslugi.html') Uslugi
-    h1.header__caption-level-1
+    h1(class= `${className}__caption-level-1`)
       | Amazing Dude. Amazing Life.
-    p.header__paragraph-1
+    p(class= `${className}__paragraph-1`)
       | Welcome to personal site of 
-      span.header__john John Doe
+      span(class= `${className}__john`) John Doe
       | .
-    p.header__paragraph-2
+    p(class= `${className}__paragraph-2`)
       | A professional skier and musician.
