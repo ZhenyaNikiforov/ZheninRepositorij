@@ -48,7 +48,6 @@ header {
             font-size: 12px;
             line-height: 1.2;
             font-weight: normal;
-
             .header__btn-menu-gamburger {
                 display: block;
                 width: 27px;
@@ -56,8 +55,27 @@ header {
                 margin: 0 auto 8px;
                 padding: 0;
                 position: relative;
-
                 .header__gamburger-item-middle {
+                    display: block;
+                    width: 27px;
+                    height: 4px;
+                    background-color: black;
+                    position: absolute;
+                    top: 9px;
+                    left: 0;
+                }
+                .header__gamburger-item-middle::before {
+                    content: ' ';
+                    display: block;
+                    width: 27px;
+                    height: 4px;
+                    background-color: black;
+                    position: absolute;
+                    top: -9px;
+                    left: 0;
+                }
+                .header__gamburger-item-middle::after {
+                    content: ' ';
                     display: block;
                     width: 27px;
                     height: 4px;
@@ -83,107 +101,79 @@ header {
             background-color: red;
             margin: 0;
             padding: 0;
+            .header__menu-list {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                .header__menu-item {
+                    display: block;
+                    margin: 0;
+                    padding: 0;
+                    .header__menu-referens {
+                        text-decoration: none;
+                        font-size: 22px;
+                        font-weight: bold;
+                        color: white;
+                        line-height: 1.8;
+                        display: block;
+                        margin: 0;
+                        padding: 0;
+                        text-align: center;
+                        cursor: pointer;
+                    }
+                    .header__menu-referens:hover {
+                        background-color: green;
+                    }
+                    .header__menu-referens:focus-visible {
+                        outline-offset: 2px;
+                        outline-style: solid;
+                        outline-width: 1px;
+                        outline-color: white;
+                    }
+                }
+            }
         }
         .header__navigation_visible {
             display: block;
         }
     }
+    .header__wrapper-caption {
+        margin: 183px auto 0;
+        max-width: 1180px;
+        padding: 0;
+        .header__caption {
+            font-weight: normal;
+            letter-spacing: -0.027em;
+            font-size: 72px;
+            line-height: 1.2;
+            padding: 0;
+            margin: 0 auto 0 0;
+            max-width: 500px;
+        }
+    }
+    .header__paragraph:nth-child(3) {
+        font-weight: normal;
+        letter-spacing: -0.027em;
+        font-size: 30px;
+        line-height: 1.5;
+        padding: 0;
+        margin: 14px auto 0;
+        max-width: 1180px;
+        .header__john {
+            font-weight: bold;
+        }
+    }
+    .header__paragraph:nth-child(4) {
+        font-weight: normal;
+        letter-spacing: -0.027em;
+        font-size: 30px;
+        line-height: 1.5;
+        padding: 0;
+        margin: 0 auto;
+        max-width: 1180px;
+    }
 }
 
-
-
-
-
-
-
-.header__gamburger-item-middle::before {
-    content: ' ';
-    display: block;
-    width: 27px;
-    height: 4px;
-    background-color: black;
-    position: absolute;
-    top: -9px;
-    left: 0;
-}
-.header__gamburger-item-middle::after {
-    content: ' ';
-    display: block;
-    width: 27px;
-    height: 4px;
-    background-color: black;
-    position: absolute;
-    top: 9px;
-    left: 0;
-}
-
-
-.header__menu-list {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-.header__menu-item {
-    display: block;
-    margin: 0;
-    padding: 0;
-}
-.header__menu-referens {
-    text-decoration: none;
-    font-size: 22px;
-    font-weight: bold;
-    color: white;
-    line-height: 1.8;
-    display: block;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    cursor: pointer;
-}
-.header__menu-referens:hover {
-    background-color: green;
-}
-.header__menu-referens:focus-visible {
-    outline-offset: 2px;
-    outline-style: solid;
-    outline-width: 1px;
-    outline-color: white;
-}
-.header__wrapper-caption {
-    margin: 183px auto 0;
-    max-width: 1180px;
-    padding: 0;
-}
-.header__caption {
-    font-weight: normal;
-    letter-spacing: -0.027em;
-    font-size: 72px;
-    line-height: 1.2;
-    padding: 0;
-    margin: 0 auto 0 0;
-    max-width: 500px;
-}
-header .header__paragraph:nth-child(3) {
-    font-weight: normal;
-    letter-spacing: -0.027em;
-    font-size: 30px;
-    line-height: 1.5;
-    padding: 0;
-    margin: 14px auto 0;
-    max-width: 1180px;
-}
-.header__john {
-    font-weight: bold;
-}
-header .header__paragraph:nth-child(4) {
-    font-weight: normal;
-    letter-spacing: -0.027em;
-    font-size: 30px;
-    line-height: 1.5;
-    padding: 0;
-    margin: 0 auto;
-    max-width: 1180px;
-}
 @media screen and (max-width: 768px) {
     header {
         background-image: none;
