@@ -2,27 +2,27 @@
     background-color: #212227;
     display: flex;
     min-height: 605px;
-    & &__column:nth-child(1) {
+    &__column-left {
         width: 280px;
         margin-left: auto;
         padding-top: 97px;
         padding-bottom: 11px;
     }
-    & &__column:nth-child(1) &__caption:nth-child(1) {
+    &__left-first-caption {
         font-family: FiraSans, Arial, sans-serif;
         font-weight: bold;
         color: #f9f9f9;
         font-size: 18px;
         margin: 0;
     }
-    & &__column:nth-child(1) &__caption:nth-child(2) {
+    &__left-second-caption {
         font-family: FiraSans, Arial, sans-serif;
         font-weight: bold;
         color: #f9f9f9;
         font-size: 18px;
         margin: 0;
     }
-    & &__column:nth-child(1) &__paragraph:nth-child(3) {
+    &__left-paragraph {
         font-family: FiraSans, Arial, sans-serif;
         font-weight: normal;
         color: #8a8a8a;
@@ -31,7 +31,7 @@
         margin-top: 26px;
         margin-bottom: 0;
     }
-    & &__column:nth-child(1) &__parag-bott:nth-child(4) {
+    &__left-copyring {
         display: block;
         font-family: FiraSans, Arial, sans-serif;
         font-weight: normal;
@@ -41,20 +41,20 @@
         margin-top: 21px;
         margin-bottom: 0;
     }
-    & &__column:nth-child(2) {
+    &__column-middle {
         width: 180px;
         margin: 0 120px;
         padding-top: 97px;
         padding-bottom: 11px;
     }
-    & &__column:nth-child(2) &__caption:nth-child(1) {
+    &__middle-first-caption {
         font-family: FiraSans, Arial, sans-serif;
         font-weight: bold;
         color: #f9f9f9;
         font-size: 18px;
         margin: 0;
     }
-    & &__column:nth-child(2) &__paragraph:nth-child(2) {
+    &__middle-first-paragraph {
         font-family: FiraSans, Arial, sans-serif;
         font-weight: normal;
         color: #8a8a8a;
@@ -63,7 +63,7 @@
         margin-top: 26px;
         margin-bottom: 0;
     }
-    & &__column:nth-child(2) &__paragraph:nth-child(3) {
+    &__middle-second-paragraph {
         font-family: FiraSans, Arial, sans-serif;
         font-weight: normal;
         color: #8a8a8a;
@@ -72,7 +72,7 @@
         margin-top: 21px;
         margin-bottom: 0;
     }
-    & &__column:nth-child(2) &__caption:nth-child(4) {
+    &__middle-second-caption {
         margin-top: 70px;
         margin-bottom: 0;
         font-family: FiraSans, Arial, sans-serif;
@@ -80,7 +80,7 @@
         color: #f9f9f9;
         font-size: 18px;
     }
-    & &__column:nth-child(2) &__list:nth-child(5) {
+    &__middle-list {
         font-family: FiraSans, Arial, sans-serif;
         font-weight: bold;
         font-size: 14px;
@@ -90,16 +90,16 @@
         list-style-type: none;
         padding: 0;
     }
-    & &__column:nth-child(2) &__list:nth-child(5) &__list-item {
+    &__middle-list-item {
         color: #919191;
         padding-left: 24px;
     }
-    & &__column:nth-child(2) &__list:nth-child(5) &__list-item>a {
+    &__middle-list-item-reference {
         color: #919191;
         text-decoration: none;
         cursor: pointer;
     }
-    & &__column:nth-child(2) &__list:nth-child(5) &__list-item>a:focus-visible {
+    &__middle-list-item-reference:focus-visible {
         background-color: white;
         outline-style: solid;
         outline-offset: 0px;
@@ -107,32 +107,32 @@
         outline-color: white;
         color: black;
     }
-    & &__column:nth-child(2) &__list:nth-child(5) &__list-item:nth-child(1) {
+    &__middle-list-item:nth-child(1) {
         background: url(../../images/ikonkafejsbuka.png) no-repeat 0 4px;
     }
-    & &__column:nth-child(2) &__list:nth-child(5) &__list-item:nth-child(2) {
+    &__middle-list-item:nth-child(2) {
         background: url(../../images/ikonkatwittera.png) no-repeat 0 4px;
     }
-    & &__column:nth-child(2) &__list:nth-child(5) &__list-item:nth-child(3) {
+    &__middle-list-item:nth-child(3) {
         background: url(../../images/ikonka3.png) no-repeat 0 4px;
     }
-    & &__column:nth-child(2) &__list:nth-child(5) &__list-item:nth-child(4) {
+    &__middle-list-item:nth-child(4) {
         background: url(../../images/ikonkainternet.png) no-repeat 0 4px;
     }
-    & &__column:nth-child(3) {
+    &__column-right {
         width: 480px;
         margin-right: auto;
         padding-top: 97px;
         padding-bottom: 11px;
     }
-    & &__column:nth-child(3) &__caption:nth-child(1) {
+    &__right-first-caption {
         font-family: FiraSans, Arial, sans-serif;
         font-weight: bold;
         color: #f9f9f9;
         font-size: 18px;
         margin: 0;
     }
-    & &__column:nth-child(3) &__paragraph:nth-child(2) {
+    &__right-first-paragraph {
         font-family: FiraSans, Arial, sans-serif;
         font-weight: normal;
         color: #8a8a8a;
@@ -141,7 +141,7 @@
         margin-top: 26px;
         margin-bottom: 0;
     }
-    & &__column:nth-child(3) &__form:nth-child(3) {
+    &__right-form {
         display: block;
         width: 100%;
         padding: 0;
@@ -154,7 +154,7 @@
         margin-bottom: 0;
         margin-top: 16px;
     }
-    & &__column:nth-child(3) &__form:nth-child(3) &__input-email:nth-child(1){
+    &__right-input-email {
         border-style: none;
         padding: 0;
         display: block;
@@ -169,13 +169,13 @@
         background-color: transparent;
         left: 20px;
     }
-    & &__column:nth-child(3) &__form:nth-child(3) &__input-email:nth-child(1):focus-visible {
+    &__right-input-email:focus-visible {
         outline-style: solid;
         outline-width: 1px;
         outline-offset: 2px;
         outline-color: white;
     }
-    & &__column:nth-child(3) &__form:nth-child(3) &__button-email:nth-child(2){
+    &__right-button-email {
         position: absolute;
         top: 50%;
         right: 19px;
@@ -188,13 +188,13 @@
         height: 17px;
         background-image: url(../../images/vector.png);
     }
-    & &__column:nth-child(3) &__form:nth-child(3) &__button-email:nth-child(2):focus-visible {
+    &__right-button-email:focus-visible {
         outline-style: solid;
         outline-color: white;
         outline-width: 1px;
         outline-offset: 2px;
     }
-    & &__column:nth-child(3) &__caption:nth-child(4) {
+    &__right-second-caption {
         font-family: FiraSans, Arial, sans-serif;
         font-weight: bold;
         color: #f9f9f9;
@@ -202,12 +202,12 @@
         margin-top: 76px;
         margin-bottom: 20px;
     }
-    & &__column:nth-child(3) &__row-logotype:nth-child(5) {
+    &__right-row-logotype {
         display: block;
         margin: 0;
         word-spacing: 20px;
     }
-    & &__column:nth-child(3) &__row-logotype:nth-child(5) &__logotype-item {
+    &__right-logotype-item {
         margin: 0;
         box-sizing: content-box;
         display: inline-block;
@@ -222,13 +222,13 @@
         text-align: center;
     }
     @media screen and (max-width: 1200px) {
-        & &__column:nth-child(1) {
+        &__column-left {
             margin-left: 0.5%;
         }
-        & &__column:nth-child(2) {
+        &__column-middle {
             margin: 0 auto;
         }
-        & &__column:nth-child(3) {
+        &__column-right {
             margin-right: 0.5%;
         }
     }
@@ -236,15 +236,15 @@
         flex-wrap: wrap;
         min-height: 0;
         
-        & &__column:nth-child(1) {
+        &__column-left {
             margin: 0 1%;
             width: 56%;
         }
-        & &__column:nth-child(2) {
+        &__column-middle {
             margin: 0 1%;
             width: 40%;
         }
-        & &__column:nth-child(3) {
+        &__column-right {
             margin: 0 1%;
             width: 98%;
             padding-bottom: 90px;
@@ -252,13 +252,13 @@
     }
     @media screen and (max-width: 576px) {
         display: block;
-        & &__column:nth-child(1),
-        & &__column:nth-child(2),
-        & &__column:nth-child(3) {
+        &__column-left,
+        &__column-middle,
+        &__column-right {
             width: 97%;
             margin: 0 auto;
         }
-        & &__column:nth-child(3) &__row-logotype:nth-child(5) {
+        &__right-row-logotype {
             line-height: 100px;
         }
     }
