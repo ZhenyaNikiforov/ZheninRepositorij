@@ -1,29 +1,29 @@
 mixin header(fileName1, referenceName1, fileName2, referenceName2, fileName3, referenceName3, fileName4, referenceName4)  
-  - const header= 'header';
+  - const className= 'header';
 
-  header(class= `${header}`)
-    div(class= `${header}__row-navigation`)
-      a(class= `${header}__logotype` href='index.html') /.
-      button(class= `${header}__btn-menu`)
-        div(class= `${header}__btn-menu-gamburger`)
-          span(class= `${header}__gamburger-item-middle`)
+  header(class= `${className}`)
+    div(class= `${className}__row-navigation`)
+      a(class= `${className}__logotype` href='index.html') /.
+      button(class= `${className}__btn-menu`)
+        div(class= `${className}__btn-menu-gamburger`)
+          span(class= `${className}__gamburger-item-middle`)
         | MENU
-      nav(class= `${header}__navigation`)
-        ul(class= `${header}__menu-list`)
-          li(class= `${header}__menu-item`)
-            a(href= fileName1 class= `${header}__menu-referens`)= referenceName1 /* -'index.html' MAIN */
-          li(class= `${header}__menu-item`)
-            a(href= fileName2 class= `${header}__menu-referens`)= referenceName2 /* -'kontaktyi.html' Kontaktyi */
-          li(class= `${header}__menu-item`)
-            a(href= fileName3 class= `${header}__menu-referens`)= referenceName3 /* -'tovaryi.html' Tovaryi */
-          li(class= `${header}__menu-item`)
-            a(href= fileName4 class= `${header}__menu-referens`)= referenceName4 /* -'uslugi.html' Uslugi */
-    div(class= `${header}__wrapper-caption`)
-      h1(class= `${header}__caption`)
+      nav(class= `${className}__navigation`)
+        ul(class= `${className}__menu-list`)
+          li(class= `${className}__menu-item`)
+            a(href= fileName1 class= `${className}__menu-referens`)= referenceName1 /* -'index.html' MAIN */
+          li(class= `${className}__menu-item`)
+            a(href= fileName2 class= `${className}__menu-referens`)= referenceName2 /* -'kontaktyi.html' Kontaktyi */
+          li(class= `${className}__menu-item`)
+            a(href= fileName3 class= `${className}__menu-referens`)= referenceName3 /* -'tovaryi.html' Tovaryi */
+          li(class= `${className}__menu-item`)
+            a(href= fileName4 class= `${className}__menu-referens`)= referenceName4 /* -'uslugi.html' Uslugi */
+    div(class= `${className}__wrapper-caption`)
+      h1(class= `${className}__caption`)
         | Amazing Dude. Amazing Life.
-    p(class= `${header}__paragraph-top`)
+    p(class= `${className}__paragraph-top`)
       | Welcome to personal site of 
-      span(class= `${header}__john`) John Doe
+      span(class= `${className}__john`) John Doe
       | .
-    p(class= `${header}__paragraph-bottom`)
+    p(class= `${className}__paragraph-bottom`)
       | A professional skier and musician.
