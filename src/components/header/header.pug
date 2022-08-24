@@ -1,32 +1,29 @@
-- const header= 'header';
+mixin header(fileName1, referenceName1, fileName2, referenceName2, fileName3, referenceName3, fileName4, referenceName4)  
+  - const header= 'header';
 
-header(class= `${header}`)
-  div(class= `${header}__row-navigation`)
-    a(class= `${header}__logotype` href='index.html') /.
-    button(class= `${header}__btn-menu`)
-      div(class= `${header}__btn-menu-gamburger`)
-        span(class= `${header}__gamburger-item-middle`)
-      | MENU
-    nav(class= `${header}__navigation`)
-      ul(class= `${header}__menu-list`)
-        li(class= `${header}__menu-item`)
-          a(href='index.html' class= `${header}__menu-referens`)
-            | MAIN
-        li(class= `${header}__menu-item`)
-          a(href='kontaktyi.html' class= `${header}__menu-referens`)
-            | Kontaktyi
-        li(class= `${header}__menu-item`)
-          a(href='tovaryi.html' class= `${header}__menu-referens`)
-            | Tovaryi
-        li(class= `${header}__menu-item`)
-          a(href='uslugi.html' class= `${header}__menu-referens`)
-            | Uslugi
-  div(class= `${header}__wrapper-caption`)
-    h1(class= `${header}__caption`)
-      | Amazing Dude. Amazing Life.
-  p(class= `${header}__paragraph-top`)
-    | Welcome to personal site of 
-    span(class= `${header}__john`) John Doe
-    | .
-  p(class= `${header}__paragraph-bottom`)
-    | A professional skier and musician.
+  header(class= `${header}`)
+    div(class= `${header}__row-navigation`)
+      a(class= `${header}__logotype` href='index.html') /.
+      button(class= `${header}__btn-menu`)
+        div(class= `${header}__btn-menu-gamburger`)
+          span(class= `${header}__gamburger-item-middle`)
+        | MENU
+      nav(class= `${header}__navigation`)
+        ul(class= `${header}__menu-list`)
+          li(class= `${header}__menu-item`)
+            a(href= fileName1 class= `${header}__menu-referens`)= referenceName1 /* -'index.html' MAIN */
+          li(class= `${header}__menu-item`)
+            a(href= fileName2 class= `${header}__menu-referens`)= referenceName2 /* -'kontaktyi.html' Kontaktyi */
+          li(class= `${header}__menu-item`)
+            a(href= fileName3 class= `${header}__menu-referens`)= referenceName3 /* -'tovaryi.html' Tovaryi */
+          li(class= `${header}__menu-item`)
+            a(href= fileName4 class= `${header}__menu-referens`)= referenceName4 /* -'uslugi.html' Uslugi */
+    div(class= `${header}__wrapper-caption`)
+      h1(class= `${header}__caption`)
+        | Amazing Dude. Amazing Life.
+    p(class= `${header}__paragraph-top`)
+      | Welcome to personal site of 
+      span(class= `${header}__john`) John Doe
+      | .
+    p(class= `${header}__paragraph-bottom`)
+      | A professional skier and musician.
