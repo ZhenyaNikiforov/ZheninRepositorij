@@ -1,4 +1,5 @@
 section.razdelZatyilok
+  include ../buttons/buttons.pug
   .zatyilok_zero
   .zatyilok_kontent
     img(src='../images/gl.png' alt='zatyilok')
@@ -10,5 +11,6 @@ section.razdelZatyilok
         li Production Company: Sycamore
         li Producer: Laura S. Carlton
         li Executive Producer: Jack M. Heckart
-      button.zatyilok_button
-        | CLICK TO PLAY
+      //- button.zatyilok_button
+        | CLICK TO PLAY //
+      +buttons('zatyilok_button', 'CLICK TO PLAY')
