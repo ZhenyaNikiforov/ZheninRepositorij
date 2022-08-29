@@ -1,174 +1,54 @@
 .button {
-    //-- Стиль раздела контактов
-    &__contacts-left {
-        display: block;
-        box-sizing: content-box;
-        margin-top: auto;
-        margin-left: 26.25%;
-        margin-right: auto;
-        margin-bottom: 145px;
-        width: 260px;
-        border-radius: 28px;
-        border-width: 2px;
-        border-style: solid;
-        background-color: transparent;
+    border-radius: 28px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: yellow;
+    background-color: transparent;
+    color: yellow;
+    font-family: FiraSans, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+    &:focus-visible {
+        outline-color: yellow;
+        outline-width: 1px;
+        outline-offset: 3px;
+        outline-style: solid;
+    }
+
+    &_white {
         border-color: #f9f9f9;
         color: #f9f9f9;
-        font-family: FiraSans, Arial, sans-serif;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 1.2;
-        letter-spacing: 0.2em;
-        padding: 15px 8px 15px 8px;
-        text-decoration: none;
-        text-align: center;
-        cursor: pointer;
     }
-    &__contacts-left:focus-visible {
-        outline-color: yellow;
-        outline-width: 1px;
-        outline-offset: 3px;
-        outline-style: solid;
-    }
-    &__contacts-right {
-        display: block;
-        box-sizing: content-box;
-        margin-top: auto;
-        margin-left: 7.5%;
-        margin-right: auto;
-        margin-bottom: 145px;
-        width: 260px;
-        border-radius: 28px;
-        border-width: 2px;
-        border-style: solid;
-        background-color: transparent;
-        border-color: #f9f9f9;
-        color: #f9f9f9;
-        font-family: FiraSans, Arial, sans-serif;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 1.2;
-        letter-spacing: 0.2em;
-        padding: 15px 8px;
-        text-decoration: none;
-        text-align: center;
-        cursor: pointer;
-    }
-    &__contacts-right:focus-visible {
-        outline-color: yellow;
-        outline-width: 1px;
-        outline-offset: 3px;
-        outline-style: solid;
-    }
-    @media screen and (max-width: 900px){
-        &__contacts-right,
-        &__contacts-left {
-            margin: 5% auto 0;
-        }
-    }
-    //-- Стиль раздела лыж
-    &__skis {
-        box-sizing: content-box;
-        width: 260px;
-        padding: 15px 8px 15px 8px;
-        line-height: 1.2;
-        text-align: center;
-        border-radius: 28px;
-        border-width: 2px;
-        border-color: #ffffff;
-        background-color: #3f729b;
-        font-family: FiraSans, Arial, sans-serif;
-        font-weight: bold;
-        color: #f9f9f9;
-        font-size: 18px;
-        letter-spacing: 0.2em;
-        border-style: solid;
-        margin-left: 26.625%;
-        margin-top: 4.25%;
-        display: block;
-        text-decoration: none;
-        cursor: pointer;
-    }
-    &__skis:focus-visible {
-        outline-color: yellow;
-        outline-width: 1px;
-        outline-offset: 3px;
-        outline-style: solid;
-    }
-    @media screen and (max-width: 1600px){
-        &__skis {
-            width: 16.25vw;
-            padding: 0.9375vw 0.5vw 0.9375vw 0.5vw;
-            //height: 3.5vw;
-            font-size: 1.125vw;
-            border-radius: 1.75vw;
-            border-width: 0.125vw;
-        }
-    }
-    @media screen and (max-width: 800px){
-        &__skis {
-            margin: 0 auto;
-            width: 260px;
-            //height: 56px;
-            padding: 15px 8px 15px 8px;
-            border-radius: 28px;
-            border-width: 2px;
-            font-size: 18px;
-        }
-    }
-    //-- Стиль раздела "Затылок"
-    &__back {
-        display: block;
-        margin: 11.5% auto 0 14.5%;
-        box-sizing: border-box;
-        width: 44%;
-        //min-height: 49px;
-        padding: 11.5px 32px 11.5px 12px;
-        border-width: 2px;
-        border-style: solid;
+    &_green {
         border-color: #2ebd59;
         color: #2ebd59;
-        background-color: transparent;
         border-radius: 24.5px;
-        font-family: FiraSans, Arial, sans-serif;
-        font-weight: bold;
-        cursor: pointer;
-        font-size: 18px;
-        line-height: 1.2;
+        min-height: 49px;
         text-align: start;
-        background-image: url(../../images/play.png);
+        letter-spacing: normal;
         background-repeat: no-repeat;
         background-size: 15px auto;
-        background-position: 93% center;
-        text-decoration: none;
+        background-position: 142px center;
+        justify-content: flex-start;
+        padding: 8px 32px 8px 8px;
     }
-    &__back:focus-visible {
-        outline-color: yellow;
-        outline-width: 1px;
-        outline-offset: 3px;
-        outline-style: solid;
-    }
-    @media screen and (max-width: 1600px){
-        &__back {
-            border-radius: 1.53125vw;
-            border-width: 0.125vw;
-            //min-height: 3.0625vw;
-            font-size: 1.125vw;
-            padding: 0.72vw 2vw 0.72vw 0.75vw;
-            background-size: 0.9375vw auto;
-        }
-    }
-    @media screen and (max-width: 1000px){
-        &__back {
-            margin: 18px auto 0;
-            width: 180px;
-            border-radius: 24.5px;
-            border-width: 2px;
-            //min-height: 49px;
-            padding: 11.5px 32px 11.5px 12px;
-            font-size: 18px;
-            background-size: 15px auto;
-        }
+    &_icon {
+        background-image: url(../../images/play.png);
     }
 }
 
