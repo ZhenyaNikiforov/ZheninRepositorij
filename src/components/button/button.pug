@@ -1,2 +1,2 @@
-mixin button(classSelector, buttonText)
-  a(class= classSelector href= '#')= buttonText
+mixin button(classSelector, iconName, buttonText)
+  a(class= `button button_${classSelector} button_icon-${iconName}` href= '#')= buttonText
