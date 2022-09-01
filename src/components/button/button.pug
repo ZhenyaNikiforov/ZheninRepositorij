@@ -1,2 +1,12 @@
-mixin button(classSelector, iconName, buttonText)
-  a(class= `button button_${classSelector} button_icon-${iconName}` href= '#')= buttonText
+mixin button(arrayArguments)
+  - 
+    let colorModifikator= arrayArguments.color;
+    let hasIcon= arrayArguments.hasIcon;
+    let textContent= arrayArguments.textContent;
+    let icon;
+    if (hasIcon== true){
+      icon= 'icon';
+    }else{
+      icon= ' ';
+    }
+  a(class= `button button_color_${colorModifikator} button_${icon}` href= '#')= textContent

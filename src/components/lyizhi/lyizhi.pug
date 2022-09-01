@@ -1,4 +1,9 @@
 include ../button/button.pug
+-
+  let skisButtonArgs= Object.assign({}, arguments);
+  skisButtonArgs.color= 'white';
+  skisButtonArgs.textContent= 'VIEV ON INSTAGRAM';
+
 section.razdelLyizhi
   .lyizhi_text
     h2.lyizhi_zagolov INSTAGRAM
@@ -7,7 +12,7 @@ section.razdelLyizhi
       | nisi in, vulputate placerat odio.
       | Pellentesque iaculis.
     div(class= 'skis__button-wrapper')
-      +button('white', ' ', 'VIEV ON INSTAGRAM')
+      +button(skisButtonArgs)
   .lyizhi_icon
     img(src='../images/sky.png' alt='Lyizhi_Palki_Botinki')
   .lyizhi_zero

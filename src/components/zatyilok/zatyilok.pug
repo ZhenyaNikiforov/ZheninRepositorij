@@ -1,4 +1,11 @@
 include ../button/button.pug
+
+-
+  let backOfHeadButtonArgs= Object.assign({}, arguments);
+  backOfHeadButtonArgs.textContent= 'CLICK TO PLAY';
+  backOfHeadButtonArgs.hasIcon= true;
+  backOfHeadButtonArgs.color= 'green'; 
+
 section.razdelZatyilok
   .zatyilok_zero
   .zatyilok_kontent
@@ -12,4 +19,5 @@ section.razdelZatyilok
         li Producer: Laura S. Carlton
         li Executive Producer: Jack M. Heckart
       div(class= 'back__button-wrapper')
-        +button('green', 'play', 'CLICK TO PLAY')
+        +button(backOfHeadButtonArgs)
+//-''
