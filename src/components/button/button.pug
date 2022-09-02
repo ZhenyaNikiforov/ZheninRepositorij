@@ -1,12 +1,11 @@
-mixin button(arrayArguments)
+mixin button(options)
+  - const className= 'button';
   - 
-    let colorModifikator= arrayArguments.color;
-    let hasIcon= arrayArguments.hasIcon;
-    let textContent= arrayArguments.textContent;
+    let {color= null, hasIcon= false, textContent = 'Abra-Kadabra'}= options;
     let icon;
     if (hasIcon== true){
-      icon= 'icon';
+      icon= `${className}_icon`;
     }else{
       icon= ' ';
     }
-  a(class= `button button_color_${colorModifikator} button_${icon}` href= '#')= textContent
+  a(class= `${className} ${className}_color_${color} ${icon}` href= '#')= textContent
