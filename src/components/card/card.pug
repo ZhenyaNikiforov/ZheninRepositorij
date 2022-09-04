@@ -1,0 +1,11 @@
+mixin card()
+  - const className= 'card';
+  div(class= `${className}`)
+    h2(class= `${className}__first-caption`)= firstCaptionContent
+    h2(class= `${className}__second-caption`)= secondCaptionContent
+    p(class= `${className}__paragraph`)= paragraphContent
+    ul(class= `${className}__list`)
+      li(class= `${className}__list-item`)= listItemContent1 
+      li(class= `${className}__list-item`)= listItemContent2
+      li(class= `${className}__list-item`)= listItemContent3 
+      li(class= `${className}__list-item`)= listItemContent4
