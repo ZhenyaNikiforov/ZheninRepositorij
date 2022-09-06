@@ -1,4 +1,5 @@
 include ../button/button.pug
+include ../card/card.pug
 -
   let leftButtonArgs= Object.assign({}, arguments);
   leftButtonArgs.color= 'white';
@@ -7,19 +8,21 @@ include ../button/button.pug
   let rightButtonArgs= Object.assign({}, arguments);
   rightButtonArgs.color= 'white';
   rightButtonArgs.textContent= 'BUY FROM ITUNES'
+
+  let leftCardArgs= Object.assign({}, cardArguments);
+  leftCardArgs.cardName= 'contacts-left';
+  leftCardArgs.firstCaptionContent= 'SPOTIFY';
+  leftCardArgs.paragraphContent= 'Follow me, stream and add my songs to your Spotify playlist.';
+
+  let rightCardArgs= Object.assign({}, cardArguments);
+  rightCardArgs.cardName= 'contacts-right';
+  rightCardArgs.firstCaptionContent= 'ITUNES';
+  rightCardArgs.paragraphContent= 'Buy and download my songs from iTunes.';
   
 section.razdelKontaktyi
   .kontaktyi_1
-    h2.zagolov_kontaktyi_1
-      | SPOTIFY
-    p.abzacs_kontaktyi_1
-      | Follow me, stream and add my songs to your Spotify playlist.
-    div(class= 'contacts__left-button-wrapper')
-      +button(leftButtonArgs)
+    +card(leftCardArgs)
+      +button(leftButtonArgs)  
   .kontaktyi_2
-    h2.zagolov_kontaktyi_2
-      | ITUNES
-    p.abzacs_kontaktyi_2
-      | Buy and download my songs from iTunes.
-    div(class= 'contacts__right-button-wrapper')
+    +card(rightCardArgs)
       +button(rightButtonArgs)

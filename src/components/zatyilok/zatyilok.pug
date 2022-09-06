@@ -1,23 +1,25 @@
 include ../button/button.pug
+include ../card/card.pug
 
 -
   let backOfHeadButtonArgs= Object.assign({}, arguments);
   backOfHeadButtonArgs.textContent= 'CLICK TO PLAY';
   backOfHeadButtonArgs.hasIcon= true;
-  backOfHeadButtonArgs.color= 'green'; 
+  backOfHeadButtonArgs.color= 'green';
+
+  let backOfHeadCardArgs= Object.assign({}, cardArguments);
+  backOfHeadCardArgs.cardName= 'backOfHead';
+  backOfHeadCardArgs.firstCaptionContent= 'SELF-EFFACING RAGE';
+  backOfHeadCardArgs.secondCaptionContent= 'FT. FASCINATING COLLISION';
+  backOfHeadCardArgs.listItemContent1= 'Director: James G. Rohrer';
+  backOfHeadCardArgs.listItemContent2= 'Production Company: Sycamore';
+  backOfHeadCardArgs.listItemContent3= 'Producer: Laura S. Carlton';
+  backOfHeadCardArgs.listItemContent4= 'Executive Producer: Jack M. Heckart';
 
 section.razdelZatyilok
   .zatyilok_zero
   .zatyilok_kontent
     img(src='../images/gl.png' alt='zatyilok')
     section.zatyilok_text
-      h2.zagol_zatyil_2 SELF-EFFACING RAGE
-      h3.zagol_zatyil_3 FT. FASCINATING COLLISION
-      ul.zatyilok_abzacs
-        li Director: James G. Rohrer
-        li Production Company: Sycamore
-        li Producer: Laura S. Carlton
-        li Executive Producer: Jack M. Heckart
-      div(class= 'back__button-wrapper')
+      +card(backOfHeadCardArgs)
         +button(backOfHeadButtonArgs)
-//-''

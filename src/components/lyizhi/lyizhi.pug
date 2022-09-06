@@ -1,18 +1,18 @@
 include ../button/button.pug
+include ../card/card.pug
 -
   let skisButtonArgs= Object.assign({}, arguments);
   skisButtonArgs.color= 'white';
   skisButtonArgs.textContent= 'VIEV ON INSTAGRAM';
 
+  let skisCardArgs= Object.assign({}, cardArguments);
+  skisCardArgs.firstCaptionContent= 'INSTAGRAM';
+  skisCardArgs.paragraphContent= 'Etiam lacus dolor, tincidunt vitae nisi in, vulputate placerat odio. Pellentesque iaculis.';
+
 section.razdelLyizhi
   .lyizhi_text
-    h2.lyizhi_zagolov INSTAGRAM
-    p.lyizhi_abz
-      | Etiam lacus dolor, tincidunt vitae
-      | nisi in, vulputate placerat odio.
-      | Pellentesque iaculis.
-    div(class= 'skis__button-wrapper')
-      +button(skisButtonArgs)
+    +card(skisCardArgs)
+      +button(skisButtonArgs)  
   .lyizhi_icon
     img(src='../images/sky.png' alt='Lyizhi_Palki_Botinki')
   .lyizhi_zero

@@ -1,6 +1,19 @@
-mixin card()
+mixin card(arguments)
   - const className= 'card';
-  div(class= `${className}`)
+  - 
+    let {
+      cardName= 'skis',
+      firstCaptionContent= 'Abra-Kadabra',
+      secondCaptionContent= 'abra-kadabra',
+      paragraphContent= 'SATOR AREPO TENET OPERA ROTAS',
+      listItemContent1= 'ABRA-KADABRA',
+      listItemContent2= 'INRI INRI',
+      listItemContent3= 'INRI INRI',
+      listItemContent4= 'ABRA-KADABRA',
+      copyringContent= 'Copyring'
+    }= arguments
+
+  div(class= `${className} ${className}_${cardName}`)
     h2(class= `${className}__first-caption_${cardName}`)= firstCaptionContent
     h2(class= `${className}__second-caption_${cardName}`)= secondCaptionContent
     p(class= `${className}__paragraph_${cardName}`)= paragraphContent
@@ -11,3 +24,4 @@ mixin card()
       li(class= `${className}__list-item_${cardName}`)= listItemContent4
     div(class= `${className}__button-wrapper_${cardName}`)
       block
+    div(class= `${className}__copyring_${cardName}`)= copyringContent

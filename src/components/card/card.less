@@ -72,6 +72,7 @@
         width: auto;
         display: flex;
         flex-direction: column;
+        flex-grow: 1;
     }
     &__first-caption_contacts-left {
         font-size: 24px;
@@ -121,6 +122,7 @@
         flex-direction: column;
         margin: 0;
         width: auto;
+        flex-grow: 1;
     }
     &__first-caption_contacts-right {
         font-size: 24px;
@@ -191,8 +193,8 @@
     }
     //-- Стили карточки "Затылок"
     &_backOfHead {
-        padding-top: 11.25%;
-        padding-bottom: 2.5%;
+        padding-top: 33.75%;
+        padding-bottom: 7.5%;
         margin: 0;
         width: auto;
     }
@@ -251,12 +253,15 @@
         &__second-caption_backOfHead {
             font-size: 1.125vw;
         }
-        &__paragraph_backOfHead {
+        &__list_backOfHead {
             font-size: 0.875vw;
             line-height: 1.3125vw;
         }
     }
     @media screen and (max-width: 1000px){
+        &_backOfHead {
+            padding: 5% 0;
+        }
         &__first-caption_backOfHead {
             font-size: 24px;
             margin: 0 5% 0;
@@ -265,7 +270,7 @@
             font-size: 18px;
             margin: 18px 5% 0;
         }
-        &__paragraph_backOfHead{
+        &__list_backOfHead{
             font-size: 14px;
             line-height: 21px;
             margin: 18px 5% 0;
