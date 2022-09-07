@@ -1,7 +1,12 @@
 mixin button(options)
-  - const className= 'button';
   - 
-    let {color= null, hasIcon= false, textContent = 'Abra-Kadabra'}= options;
+    const className= 'button';
+    let {
+      color= null,
+      hasIcon= false,
+      textContent = 'Abra-Kadabra'
+    }= options;
+
     let icon;
     if (hasIcon== true){
       icon= `${className}_icon`;
