@@ -1,16 +1,18 @@
 mixin card(arguments)
-  - const className= 'card';
   - 
-    let {
-      cardName= 'skis',
-      firstCaptionContent= 'Abra-Kadabra',
-      secondCaptionContent= 'abra-kadabra',
-      paragraphContent= 'SATOR AREPO TENET OPERA ROTAS',
-      listItemContent1= 'ABRA-KADABRA',
-      listItemContent2= 'INRI INRI',
-      listItemContent3= 'INRI INRI',
-      listItemContent4= 'ABRA-KADABRA',
-      copyringContent= 'Copyring'
+    const className= 'card';
+    const {
+      cardName= '',
+      firstCaptionContent= '',
+      secondCaptionContent= '',
+      paragraphContent= '',
+      listItemContent1= '',
+      listItemContent2= '',
+      listItemContent3= '',
+      listItemContent4= '',
+      hasButton= false,
+      buttonParameters= {},
+      copyringContent= ''
     }= arguments
 
   div(class= `${className} ${className}_${cardName}`)
@@ -23,5 +25,6 @@ mixin card(arguments)
       li(class= `${className}__list-item_${cardName}`)= listItemContent3 
       li(class= `${className}__list-item_${cardName}`)= listItemContent4
     div(class= `${className}__button-wrapper_${cardName}`)
-      block
+      if hasButton== true
+        +button(buttonParameters)
     div(class= `${className}__copyring_${cardName}`)= copyringContent

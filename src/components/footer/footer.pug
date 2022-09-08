@@ -1,9 +1,9 @@
 include ../card/card.pug
 
-mixin footer  
-  - const className= 'footer';
+mixin footer
   - 
-    let footerCardArgs= Object.assign({}, cardArguments);
+    const className= 'footer';
+    const footerCardArgs= Object.assign({}, cardArguments);
     footerCardArgs.cardName= 'column';
     footerCardArgs.firstCaptionContent= 'AMAZING DUDE';
     footerCardArgs.secondCaptionContent= 'AMAZING LIFE';

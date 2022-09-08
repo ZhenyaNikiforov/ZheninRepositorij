@@ -2,12 +2,12 @@ include ../button/button.pug
 include ../card/card.pug
 
 -
-  let backOfHeadButtonArgs= Object.assign({}, arguments);
+  const backOfHeadButtonArgs= Object.assign({}, arguments);
   backOfHeadButtonArgs.textContent= 'CLICK TO PLAY';
   backOfHeadButtonArgs.hasIcon= true;
   backOfHeadButtonArgs.color= 'green';
 
-  let backOfHeadCardArgs= Object.assign({}, cardArguments);
+  const backOfHeadCardArgs= Object.assign({}, cardArguments);
   backOfHeadCardArgs.cardName= 'backOfHead';
   backOfHeadCardArgs.firstCaptionContent= 'SELF-EFFACING RAGE';
   backOfHeadCardArgs.secondCaptionContent= 'FT. FASCINATING COLLISION';
@@ -15,6 +15,8 @@ include ../card/card.pug
   backOfHeadCardArgs.listItemContent2= 'Production Company: Sycamore';
   backOfHeadCardArgs.listItemContent3= 'Producer: Laura S. Carlton';
   backOfHeadCardArgs.listItemContent4= 'Executive Producer: Jack M. Heckart';
+  backOfHeadCardArgs.hasButton= true;
+  backOfHeadCardArgs.buttonParameters= backOfHeadButtonArgs;
 
 section.razdelZatyilok
   .zatyilok_zero
@@ -22,4 +24,3 @@ section.razdelZatyilok
     img(src='../images/gl.png' alt='zatyilok')
     section.zatyilok_text
       +card(backOfHeadCardArgs)
-        +button(backOfHeadButtonArgs)

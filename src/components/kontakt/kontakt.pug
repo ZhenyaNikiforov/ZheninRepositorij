@@ -1,28 +1,30 @@
 include ../button/button.pug
 include ../card/card.pug
 -
-  let leftButtonArgs= Object.assign({}, arguments);
+  const leftButtonArgs= Object.assign({}, arguments);
   leftButtonArgs.color= 'white';
   leftButtonArgs.textContent= 'FOLLOW ON SPOTIFY';
 
-  let rightButtonArgs= Object.assign({}, arguments);
+  const rightButtonArgs= Object.assign({}, arguments);
   rightButtonArgs.color= 'white';
   rightButtonArgs.textContent= 'BUY FROM ITUNES'
 
-  let leftCardArgs= Object.assign({}, cardArguments);
+  const leftCardArgs= Object.assign({}, cardArguments);
   leftCardArgs.cardName= 'contacts-left';
   leftCardArgs.firstCaptionContent= 'SPOTIFY';
   leftCardArgs.paragraphContent= 'Follow me, stream and add my songs to your Spotify playlist.';
+  leftCardArgs.hasButton= true;
+  leftCardArgs.buttonParameters= leftButtonArgs;
 
-  let rightCardArgs= Object.assign({}, cardArguments);
+  const rightCardArgs= Object.assign({}, cardArguments);
   rightCardArgs.cardName= 'contacts-right';
   rightCardArgs.firstCaptionContent= 'ITUNES';
   rightCardArgs.paragraphContent= 'Buy and download my songs from iTunes.';
+  rightCardArgs.hasButton= true;
+  rightCardArgs.buttonParameters= rightButtonArgs;
   
 section.razdelKontaktyi
   .kontaktyi_1
-    +card(leftCardArgs)
-      +button(leftButtonArgs)  
+    +card(leftCardArgs)  
   .kontaktyi_2
     +card(rightCardArgs)
-      +button(rightButtonArgs)
