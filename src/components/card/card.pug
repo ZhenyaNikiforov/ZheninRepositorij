@@ -6,10 +6,7 @@ mixin card(arguments)
       firstCaptionContent= '',
       secondCaptionContent= '',
       paragraphContent= '',
-      listItemContent1= '',
-      listItemContent2= '',
-      listItemContent3= '',
-      listItemContent4= '',
+      listItemContents= [],
       hasButton= false,
       buttonParameters= {},
       copyringContent= ''
@@ -20,10 +17,8 @@ mixin card(arguments)
     h2(class= `${className}__second-caption_${cardName}`)= secondCaptionContent
     p(class= `${className}__paragraph_${cardName}`)= paragraphContent
     ul(class= `${className}__list_${cardName}`)
-      li(class= `${className}__list-item_${cardName}`)= listItemContent1 
-      li(class= `${className}__list-item_${cardName}`)= listItemContent2
-      li(class= `${className}__list-item_${cardName}`)= listItemContent3 
-      li(class= `${className}__list-item_${cardName}`)= listItemContent4
+      each val in listItemContents
+        li(class= `${className}__list-item_${cardName}`)= val
     div(class= `${className}__button-wrapper_${cardName}`)
       if hasButton== true
         +button(buttonParameters)
