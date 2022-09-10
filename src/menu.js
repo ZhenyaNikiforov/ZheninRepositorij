@@ -1,5 +1,18 @@
-let buttonMenu;
+class Gamburger {
+    constructor(nameClassButton,){
+        this.buttonMenu= document.getElementsByClassName(nameClassButton);
+    }
+
+    button(baseClass, openClass){
+        this.buttonMenu[0].addEventListener('click', function(){document.getElementsByClassName(baseClass)[0].classList.toggle(openClass)});
+    }
+}
+const firstGambur= new Gamburger('header__btn-menu');
+firstGambur.button('header__navigation', 'header__navigation_visible');
+
+/*let buttonMenu;
 let navMenu;
+console.log('navMenu'); //tolko na vremya
 
 buttonMenu = document.getElementsByClassName('header__btn-menu');
 navMenu = document.getElementsByClassName('header__navigation');
@@ -8,7 +21,7 @@ function openClose () {
     navMenu[0].classList.toggle('header__navigation_visible');
 }
 
-buttonMenu[0].addEventListener('click', openClose);
+buttonMenu[0].addEventListener('click', openClose);*/
 
 import html from './pages/index.pug';
 import htm from './pages/kontaktyi.pug';
