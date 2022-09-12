@@ -253,29 +253,23 @@ class Gamburger {
         this.button= btn;
         this.table= menu;
         this.opClass= open;
-    }
-    OpCl(a, b){
-        console.log(a);
-        console.log(b);
-        a.classList.toggle(b);
-    }
-    press(){
         this.button.addEventListener('click', this.OpCl.bind(null, this.table, this.opClass));
     }
+    OpCl(a, b){
+        a.classList.toggle(b);
+    }
 }
 
-const elementButton= document.getElementsByClassName('header__btn-menu')[0];
 const elementMenu= document.getElementsByClassName('header__navigation')[0];
-const openClass= 'header__navigation_visible'
-console.log(elementButton, elementMenu, openClass);
+const openClass= 'header__navigation_visible';
 
-const gamb= new Gamburger(elementButton, elementMenu, openClass);
-gamb.press();
-
-/*function start(x, y, z){
-    new Gamburger(x, y, z);
+function gumbs(nameObject){
+    const objectButtons= document.getElementsByClassName(nameObject);
+    const arrayButtons= Array.from(objectButtons);
+    arrayButtons.forEach(function(elemArray){new Gamburger(elemArray, elementMenu, openClass)});
 }
-start(elementButton, elementMenu, openClass);*/
+
+gumbs('header__btn-menu');
 
 
 
