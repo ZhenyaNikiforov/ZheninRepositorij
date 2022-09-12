@@ -1,27 +1,31 @@
 class Gamburger {
-    constructor(nameClassButton,){
-        this.buttonMenu= document.getElementsByClassName(nameClassButton);
+    constructor(btn, menu, open){
+        this.button= btn;
+        this.table= menu;
+        this.opClass= open;
     }
-
-    button(baseClass, openClass){
-        this.buttonMenu[0].addEventListener('click', function(){document.getElementsByClassName(baseClass)[0].classList.toggle(openClass)});
+    OpCl(a, b){
+        console.log(a);
+        console.log(b);
+        a.classList.toggle(b);
+    }
+    press(){
+        this.button.addEventListener('click', this.OpCl.bind(null, this.table, this.opClass));
     }
 }
-const firstGambur= new Gamburger('header__btn-menu');
-firstGambur.button('header__navigation', 'header__navigation_visible');
 
-/*let buttonMenu;
-let navMenu;
-console.log('navMenu'); //tolko na vremya
+const elementButton= document.getElementsByClassName('header__btn-menu')[0];
+const elementMenu= document.getElementsByClassName('header__navigation')[0];
+const openClass= 'header__navigation_visible'
+console.log(elementButton, elementMenu, openClass);
 
-buttonMenu = document.getElementsByClassName('header__btn-menu');
-navMenu = document.getElementsByClassName('header__navigation');
+const gamb= new Gamburger(elementButton, elementMenu, openClass);
+gamb.press();
 
-function openClose () {
-    navMenu[0].classList.toggle('header__navigation_visible');
+/*function start(x, y, z){
+    new Gamburger(x, y, z);
 }
-
-buttonMenu[0].addEventListener('click', openClose);*/
+start(elementButton, elementMenu, openClass);*/
 
 import html from './pages/index.pug';
 import htm from './pages/kontaktyi.pug';
@@ -29,8 +33,3 @@ import ht from './pages/tovaryi.pug';
 import h from './pages/uslugi.pug';
 
 import less from './styles/connect.less';
-
-/*--Создать класс бургера, этот класс должен получать в конструктор элемент, и реализовывать метод переключения меню (элемент бургера)
--- Сделать функцию рендера, которая находит все элементы, на которых этот класс должен инициализироваться. Разместить в этом же файле. 
-Файл с классом должен быть отдельный.
-Имя класса такое же, как имя файла--*/
