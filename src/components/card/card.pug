@@ -18,8 +18,8 @@ mixin card(arguments)
     p(class= `${className}__paragraph_${cardName}`)= paragraphContent
     ul(class= `${className}__list_${cardName}`)
       each val in listItemContents
-        li(class= `${className}__list-item_${cardName}`)= val
+        li(class= `${className}__list-item ${className}__list-item_${cardName}`)= val
     div(class= `${className}__button-wrapper_${cardName}`)
-      if hasButton== true
+      if hasButton
         +button(buttonParameters)
     div(class= `${className}__copyring_${cardName}`)= copyringContent
