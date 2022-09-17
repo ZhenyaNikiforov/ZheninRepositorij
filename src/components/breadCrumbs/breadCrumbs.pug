@@ -1,4 +1,11 @@
-mixin breadCrumbs(href1, refer1, href2, refer2)
+mixin breadCrumbs(options= {})
+  -
+    const {
+      href1= '',
+      refer1= '',
+      href2= '',
+      refer2= ''
+    }= options;
   nav.container_hlebnyikh_kroshek
     ul.hlebnyie_kroshki
       li#pervaya_kroshka.hlebnaya_kroshka

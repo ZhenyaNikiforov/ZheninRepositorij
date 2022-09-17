@@ -1,5 +1,11 @@
 extends index.pug  
 block maincontent
-  +breadCrumbs('index.html', 'Na glavnujy', 'tovaryi.html', 'Tovaryi')
+  -
+    const tovArgs= Object.assign({}= breadCrumbsArguments);
+    tovArgs.href1= 'index.html';
+    tovArgs.refer1= 'Na glavnujy';
+    tovArgs.href2= 'tovaryi.html';
+    tovArgs.refer2= 'Tovaryi';
+  +breadCrumbs(tovArgs)
   main
     include ../components/lyizhi/lyizhi.pug

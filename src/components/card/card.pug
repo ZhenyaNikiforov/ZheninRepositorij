@@ -1,4 +1,4 @@
-mixin card(arguments)
+mixin card(options= {})
   - 
     const className= 'card';
     const {
@@ -10,7 +10,7 @@ mixin card(arguments)
       hasButton= false,
       buttonParameters= {},
       copyringContent= ''
-    }= arguments
+    }= options;
 
   div(class= `${className} ${className}_${cardName}`)
     h2(class= `${className}__first-caption`)= firstCaptionContent

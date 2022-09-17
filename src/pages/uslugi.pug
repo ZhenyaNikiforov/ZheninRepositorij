@@ -1,5 +1,11 @@
 extends index.pug
 block maincontent
-  +breadCrumbs('index.html', 'Na glavnujy', 'uslugi.html', 'Uslugi')
+  -
+    const uslArgs= Object.assign({}, breadCrumbsArguments);
+    uslArgs.href1= 'index.html';
+    uslArgs.refer1= 'Na glavnujy';
+    uslArgs.href2= 'uslugi.html';
+    uslArgs.refer2= 'Uslugi';
+  +breadCrumbs(uslArgs)
   main
     include ../components/zatyilok/zatyilok.pug
