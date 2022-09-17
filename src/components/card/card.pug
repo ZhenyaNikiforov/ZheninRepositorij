@@ -13,13 +13,13 @@ mixin card(arguments)
     }= arguments
 
   div(class= `${className} ${className}_${cardName}`)
-    h2(class= `${className}__first-caption_${cardName}`)= firstCaptionContent
-    h2(class= `${className}__second-caption_${cardName}`)= secondCaptionContent
-    p(class= `${className}__paragraph_${cardName}`)= paragraphContent
-    ul(class= `${className}__list_${cardName}`)
+    h2(class= `${className}__first-caption`)= firstCaptionContent
+    h2(class= `${className}__second-caption`)= secondCaptionContent
+    p(class= `${className}__paragraph`)= paragraphContent
+    ul(class= `${className}__list`)
       each val in listItemContents
-        li(class= `${className}__list-item ${className}__list-item_${cardName}`)= val
-    div(class= `${className}__button-wrapper_${cardName}`)
+        li(class= `${className}__list-item`)= val
+    div(class= `${className}__button-wrapper`)
       if hasButton
         +button(buttonParameters)
-    div(class= `${className}__copyring_${cardName}`)= copyringContent
+    div(class= `${className}__copyring`)= copyringContent

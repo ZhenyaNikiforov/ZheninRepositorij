@@ -9,17 +9,17 @@
         width: auto;
         padding-top: 15.1%;
     }
-    &__first-caption_skis {
+    &_skis &__first-caption {
         font-family: FiraSans, Arial, sans-serif;
         font-weight: bold;
         font-size: 24px;
         margin: 0 auto 0 26.625%;
         color: #f9f9f9;
     }
-    &__second-caption_skis {
+    &_skis &__second-caption {
         display: none;
     }
-    &__paragraph_skis {
+    &_skis &__paragraph {
         font-family: FiraSans, Arial, sans-serif;
         font-weight: normal;
         font-size: 36px;
@@ -28,13 +28,13 @@
         margin: 3.75% auto 0 26.625%;
         width: 63%;
     }
-    &__list_skis {
+    &_skis &__list {
         display: none;
     }
-    &__list-item_skis {
+    &_skis &__list-item {
         display: none;
     }
-    &__button-wrapper_skis {
+    &_skis &__button-wrapper {
         margin-left: 26.625%;
         margin-top: 4.25%;
         margin-right: auto;
@@ -43,29 +43,29 @@
         min-height: 56px;
         padding: 0;
     }
-    &__copyring_skis {
+    &_skis &__copyring {
         display: none;
     }
     @media screen and (max-width: 1600px){
-        &__first-caption_skis {
+        &_skis &__first-caption {
             font-size: 1.5vw;
         }
-        &__paragraph_skis {
+        &_skis &__paragraph {
             font-size: 2.25vw;
         }
     }
     @media screen and (max-width: 800px){
-        &__first-caption_skis {
+        &_skis &__first-caption {
             width: auto;
             margin: 0 5% 5% 5%;
             font-size: 16px;
         }
-        &__paragraph_skis {
+        &_skis &__paragraph {
             width: auto;
             margin: 0 5% 5% 5%;
             font-size: 24px;
         }
-        &__button-wrapper_skis {
+        &_skis &__button-wrapper {
             margin: 0 auto;
         }
     }
@@ -77,7 +77,7 @@
         flex-direction: column;
         flex-grow: 1;
     }
-    &__first-caption_contacts-left {
+    &_contacts-left &__first-caption {
         font-size: 24px;
         font-weight: bold;
         font-family: FiraSans, Arial, sans-serif;
@@ -87,10 +87,10 @@
         margin-right: auto;
         margin-bottom: 0;
     }
-    &__second-caption_contacts-left {
+    &_contacts-left &__second-caption {
         display: none;
     }
-    &__paragraph_contacts-left {
+    &_contacts-left &__paragraph {
         font-family: FiraSans, Arial, sans-serif;
         font-weight: normal;
         font-size: 36px;
@@ -101,13 +101,13 @@
         margin-bottom: 14px;
         width: 62.5%;
     }
-    &__list_contacts-left {
+    &_contacts-left &__list {
         display: none;
     }
-    &__list-item_contacts-left {
+    &_contacts-left &__list-item {
         display: none;
     }
-    &__button-wrapper_contacts-left {
+    &_contacts-left &__button-wrapper {
         margin-top: auto;
         margin-left: 26.25%;
         margin-right: auto;
@@ -116,7 +116,7 @@
         min-height: 56px;
         padding: 0;
     }
-    &__copyring_contacts-left {
+    &_contacts-left &__copyring {
         display: none;
     }
     //-- Right card of contacts
@@ -127,7 +127,7 @@
         width: auto;
         flex-grow: 1;
     }
-    &__first-caption_contacts-right {
+    &_contacts-right &__first-caption {
         font-size: 24px;
         font-family: FiraSans, Arial, sans-serif;
         font-weight: bold;
@@ -137,10 +137,10 @@
         margin-right: auto;
         margin-bottom: 0;
     }
-    &__second-caption_contacts-right {
+    &_contacts-right &__second-caption {
         display: none;
     }
-    &__paragraph_contacts-right {
+    &_contacts-right &__paragraph {
         font-family: FiraSans, Arial, sans-serif;
         font-weight: normal;
         font-size: 36px;
@@ -151,13 +151,13 @@
         margin-bottom: 14px;
         width: 56.25%;
     }
-    &__list_contacts-right {
+    &_contacts-right &__list {
         display: none;
     }
-    &__list-item_contacts-right {
+    &_contacts-right &__list-item {
         display: none;
     }
-    &__button-wrapper_contacts-right {
+    &_contacts-right &__button-wrapper {
         margin-top: auto;
         margin-left: 7.5%;
         margin-right: auto;
@@ -166,31 +166,31 @@
         min-height: 56px;
         padding: 0; 
     }
-    &__copyring_contacts-right {
+    &_contacts-right &__copyring {
         display: none;
     }
     @media screen and (max-width: 1200px){
-        &__paragraph_contacts-left,
-        &__paragraph_contacts-right {
+        &_contacts-left &__paragraph,
+        &_contacts-right &__paragraph {
             font-size: 30px;
         }
     }
     @media screen and (max-width: 900px){
-        &__first-caption_contacts-left,
-        &__first-caption_contacts-right {
+        &_contacts-left &__first-caption,
+        &_contacts-right &__first-caption {
             width: auto;
             margin: 0;
             text-align: center;
         }
-        &__paragraph_contacts-left,
-        &__paragraph_contacts-right {
+        &_contacts-left &__paragraph,
+        &_contacts-right &__paragraph {
             width: 90%;
             margin: 5% auto 0;
             text-align: center;
             font-size: 24px;
         }
-        &__button-wrapper_contacts-left,
-        &__button-wrapper_contacts-right {
+        &_contacts-left &__button-wrapper,
+        &_contacts-right &__button-wrapper {
             margin: 5% auto 0;
         }
     }
@@ -201,7 +201,7 @@
         margin: 0;
         width: auto;
     }
-    &__first-caption_backOfHead {
+    &_backOfHead &__first-caption {
         font-family: FiraSans, Arial, sans-serif;
         font-weight: bold;
         font-size: 24px;
@@ -211,7 +211,7 @@
         margin-left: 14.5%;
         margin-right: 14.5%;
     }
-    &__second-caption_backOfHead {
+    &_backOfHead &__second-caption {
         font-family: FiraSans, Arial, sans-serif;
         font-weight: bold;
         font-size: 18px;
@@ -221,10 +221,10 @@
         margin-right: 14.5%;
         margin-bottom: 0px;
     }
-    &__paragraph_backOfHead {
+    &_backOfHead &__paragraph {
         display: none;
     }
-    &__list_backOfHead {
+    &_backOfHead &__list {
         color: #f9f9f9;
         font-family: FiraSans, Arial, sans-serif;
         font-weight: normal;
@@ -237,26 +237,26 @@
         padding: 0;
         list-style-type: none;
     }
-    &__list-item_backOfHead {
+    &_backOfHead &__list-item {
         color: inherit;
     }
-    &__button-wrapper_backOfHead {
+    &_backOfHead &__button-wrapper {
         margin: 11.5% auto 0 14.5%;
         width: 170px;
         min-height: 49px;
         padding: 0;
     }
-    &__copyring_backOfHead {
+    &_backOfHead &__copyring {
         display: none;
     }
     @media screen and (max-width: 1600px){
-        &__first-caption_backOfHead{
+        &_backOfHead &__first-caption{
             font-size: 1.5vw;
         }
-        &__second-caption_backOfHead {
+        &_backOfHead &__second-caption {
             font-size: 1.125vw;
         }
-        &__list_backOfHead {
+        &_backOfHead &__list {
             font-size: 0.875vw;
             line-height: 1.3125vw;
         }
@@ -265,20 +265,20 @@
         &_backOfHead {
             padding: 5% 0;
         }
-        &__first-caption_backOfHead {
+        &_backOfHead &__first-caption {
             font-size: 24px;
             margin: 0 5% 0;
         }
-        &__second-caption_backOfHead {
+        &_backOfHead &__second-caption {
             font-size: 18px;
             margin: 18px 5% 0;
         }
-        &__list_backOfHead{
+        &_backOfHead &__list{
             font-size: 14px;
             line-height: 21px;
             margin: 18px 5% 0;
         }
-        &__button-wrapper_backOfHead {
+        &_backOfHead &__button-wrapper {
             margin: 18px auto 0;            
         }
     }
@@ -289,21 +289,21 @@
         display: block;
         width: auto;
     }
-    &__first-caption_column {
+    &_column &__first-caption {
         font-family: FiraSans, Arial, sans-serif;
         font-weight: bold;
         color: #f9f9f9;
         font-size: 18px;
         margin: 0;
     }
-    &__second-caption_column {
+    &_column &__second-caption {
         font-family: FiraSans, Arial, sans-serif;
         font-weight: bold;
         color: #f9f9f9;
         font-size: 18px;
         margin: 0;
     }
-    &__paragraph_column {
+    &_column &__paragraph {
         font-family: FiraSans, Arial, sans-serif;
         font-weight: normal;
         color: #8a8a8a;
@@ -312,16 +312,16 @@
         margin-top: 26px;
         margin-bottom: 0;
     }
-    &__list_column {
+    &_column &__list {
         display: none;
     }
-    &__list-item_column {
+    &_column &__list-item {
         display: none;
     }
-    &__button-wrapper_column {
+    &_column &__button-wrapper {
         display: none;
     }
-    &__copyring_column {
+    &_column &__copyring {
         display: block;
         font-family: FiraSans, Arial, sans-serif;
         font-weight: normal;
