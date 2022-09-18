@@ -1,22 +1,22 @@
 include ../button/button.pug
 include ../card/card.pug
 -
-  const leftButtonArgs= Object.assign({}, arguments);
+  const leftButtonArgs= {}
   leftButtonArgs.color= 'white';
   leftButtonArgs.textContent= 'FOLLOW ON SPOTIFY';
 
-  const rightButtonArgs= Object.assign({}, arguments);
+  const rightButtonArgs= {}
   rightButtonArgs.color= 'white';
   rightButtonArgs.textContent= 'BUY FROM ITUNES'
 
-  const leftCardArgs= Object.assign({}, cardArguments);
+  const leftCardArgs= {}
   leftCardArgs.cardName= 'contacts-left';
   leftCardArgs.firstCaptionContent= 'SPOTIFY';
   leftCardArgs.paragraphContent= 'Follow me, stream and add my songs to your Spotify playlist.';
   leftCardArgs.hasButton= true;
   leftCardArgs.buttonParameters= leftButtonArgs;
 
-  const rightCardArgs= Object.assign({}, cardArguments);
+  const rightCardArgs= {}
   rightCardArgs.cardName= 'contacts-right';
   rightCardArgs.firstCaptionContent= 'ITUNES';
   rightCardArgs.paragraphContent= 'Buy and download my songs from iTunes.';

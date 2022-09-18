@@ -1,5 +1,16 @@
-mixin header(fileName1, referenceName1, fileName2, referenceName2, fileName3, referenceName3, fileName4, referenceName4)  
-  - const className= 'header';
+mixin header(options= {})  
+  - 
+    const className= 'header';
+    const {
+      fileName1= '',
+      referenceName1= '',
+      fileName2= '',
+      referenceName2= '',
+      fileName3= '',
+      referenceName3= '',
+      fileName4= '',
+      referenceName4= ''
+    }= options
 
   header(class= `${className}`)
     div(class= `${className}__row-navigation`)
