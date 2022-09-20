@@ -2,10 +2,7 @@ extends index.pug
 block maincontent
   -
     const tovArgs= {}
-    tovArgs.href1= 'index.html';
-    tovArgs.refer1= 'Na glavnujy';
-    tovArgs.href2= 'tovaryi.html';
-    tovArgs.refer2= 'Tovaryi';
+    tovArgs.arrOpt= [['index.html', 'Na glavnujy', 'pervaya_kroshka'], ['tovaryi.html', 'Tovaryi', '']];
   +breadCrumbs(tovArgs)
   main
     include ../components/lyizhi/lyizhi.pug

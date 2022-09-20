@@ -2,14 +2,9 @@ mixin header(options= {})
   - 
     const className= 'header';
     const {
-      fileName1= '',
-      referenceName1= '',
-      fileName2= '',
-      referenceName2= '',
-      fileName3= '',
-      referenceName3= '',
-      fileName4= '',
-      referenceName4= ''
+      arrOpt= [
+        ['', '']
+      ]
     }= options
 
   header(class= `${className}`)
@@ -21,14 +16,9 @@ mixin header(options= {})
         | MENU
       nav(class= `${className}__navigation`)
         ul(class= `${className}__menu-list`)
-          li(class= `${className}__menu-item`)
-            a(href= fileName1 class= `${className}__menu-referens`)= referenceName1 /* -'index.html' MAIN */
-          li(class= `${className}__menu-item`)
-            a(href= fileName2 class= `${className}__menu-referens`)= referenceName2 /* -'kontaktyi.html' Kontaktyi */
-          li(class= `${className}__menu-item`)
-            a(href= fileName3 class= `${className}__menu-referens`)= referenceName3 /* -'tovaryi.html' Tovaryi */
-          li(class= `${className}__menu-item`)
-            a(href= fileName4 class= `${className}__menu-referens`)= referenceName4 /* -'uslugi.html' Uslugi */
+          each val in arrOpt
+            li(class= `${className}__menu-item`)
+              a(href= val[0] class= `${className}__menu-referens`)= val[1] /* -'index.html' MAIN */
     div(class= `${className}__wrapper-caption`)
       h1(class= `${className}__caption`)
         | Amazing Dude. Amazing Life.

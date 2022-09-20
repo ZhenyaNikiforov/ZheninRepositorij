@@ -1,14 +1,12 @@
 mixin breadCrumbs(options= {})
   -
     const {
-      href1= '',
-      refer1= '',
-      href2= '',
-      refer2= ''
+      arrOpt= [
+        ['', '', '']
+      ]
     }= options;
   nav.container_hlebnyikh_kroshek
     ul.hlebnyie_kroshki
-      li#pervaya_kroshka.hlebnaya_kroshka
-        a.ssyilka_hlebnoj_kroshki(href=href1)= refer1
-      li.hlebnaya_kroshka
-        a.ssyilka_hlebnoj_kroshki(href=href2)= refer2
+      each val in arrOpt
+        li(class= 'hlebnaya_kroshka' id= val[2])
+          a(class= "ssyilka_hlebnoj_kroshki" href= val[0])= val[1]
