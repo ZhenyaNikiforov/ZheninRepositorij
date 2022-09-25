@@ -3,7 +3,10 @@ mixin header(options= {})
     const className= 'header';
     const {
       arrOpt= [
-        ['', '']
+        {
+          fileName: '',
+          referenceName: ''
+          }
       ]
     }= options
 
@@ -18,7 +21,7 @@ mixin header(options= {})
         ul(class= `${className}__menu-list`)
           each val in arrOpt
             li(class= `${className}__menu-item`)
-              a(href= val[0] class= `${className}__menu-referens`)= val[1] /* -'index.html' MAIN */
+              a(href= val.fileName class= `${className}__menu-referens`)= val.referenceName /* -'index.html' MAIN */
     div(class= `${className}__wrapper-caption`)
       h1(class= `${className}__caption`)
         | Amazing Dude. Amazing Life.

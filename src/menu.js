@@ -1,16 +1,17 @@
+import {boundMethod} from 'autobind-decorator';
 class Gamburger {
     constructor(item){
         this.rowNav= item;
-        this.btn= this.render(this.rowNav, 1);
-        this.list= this.render(this.rowNav, 2);
-        this.btn.addEventListener('click', this.handleClick.bind(null, this.list, 'header__navigation_visible'));
+        this.btn= this.render('.header__btn-menu');
+        this.list= this.render('.header__navigation');
+        this.btn.addEventListener('click', this.handleClick);
     }
-    render(a, b){
-        return a.childNodes[b];
+    render(className){
+        return this.rowNav.querySelector(className);
     }
-    
-    handleClick(a, b){
-        a.classList.toggle(b);
+    @boundMethod
+    handleClick(){
+        this.list.classList.toggle('header__navigation_visible');
     }
 }
 

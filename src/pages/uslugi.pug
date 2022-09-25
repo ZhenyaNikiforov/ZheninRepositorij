@@ -2,7 +2,18 @@ extends index.pug
 block maincontent
   -
     const uslArgs= {}
-    uslArgs.arrOpt= [['index.html', 'Na glavnujy', 'pervaya_kroshka'], ['uslugi.html', 'Uslugi', '']];
+    uslArgs.arrOpt= [
+      {
+        fileName: 'index.html',
+        referenceName: 'Na glavnujy',
+        idName: 'pervaya_kroshka'
+        },
+      {
+        fileName: 'uslugi.html',
+        referenceName: 'Uslugi',
+        idName: ''
+        }
+      ];
   +breadCrumbs(uslArgs)
   main
     include ../components/zatyilok/zatyilok.pug

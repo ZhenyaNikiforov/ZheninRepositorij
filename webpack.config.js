@@ -25,7 +25,7 @@ const pugPlugin = [new HtmlWebpackPugPlugin({adjustIndent: true})];
 
 module.exports = {
     entry: './src/menu.js',
-    mode: 'production',
+    mode: 'development',
     devServer: {
     static: './docs'
   },
@@ -59,6 +59,16 @@ module.exports = {
               test: /\.pug$/i,
 				use: [{loader: 'html-loader'}, {loader: 'pug-html-loader', options: {exports: false}}]
               
+            },
+            {
+                test: /\.m?js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-env']
+                    }
+                }
             }
         ]
     },

@@ -2,7 +2,18 @@ extends index.pug
 block maincontent
   -
     const contactsArgs= {}
-    contactsArgs.arrOpt= [['index.html', 'Na glavnujy', 'pervaya_kroshka'], ['kontaktyi.html', 'Kontaktyi', '']];
+    contactsArgs.arrOpt= [
+      {
+        fileName: 'index.html',
+        referenceName: 'Na glavnujy',
+        idName: 'pervaya_kroshka'
+        },
+      {
+        fileName: 'kontaktyi.html',
+        referenceName: 'Kontaktyi',
+        idName: ''
+        }
+      ];
   +breadCrumbs(contactsArgs)
   main
     include ../components/infoself/infoself.pug

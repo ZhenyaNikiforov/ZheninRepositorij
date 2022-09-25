@@ -2,7 +2,18 @@ extends index.pug
 block maincontent
   -
     const tovArgs= {}
-    tovArgs.arrOpt= [['index.html', 'Na glavnujy', 'pervaya_kroshka'], ['tovaryi.html', 'Tovaryi', '']];
+    tovArgs.arrOpt= [
+      {
+        fileName: 'index.html',
+        referenceName: 'Na glavnujy',
+        idName: 'pervaya_kroshka'
+        },
+      {
+        fileName: 'tovaryi.html',
+        referenceName: 'Tovaryi',
+        idName: ''
+        }
+      ];
   +breadCrumbs(tovArgs)
   main
     include ../components/lyizhi/lyizhi.pug
