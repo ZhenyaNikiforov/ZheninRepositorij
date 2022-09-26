@@ -25,7 +25,7 @@ const pugPlugin = [new HtmlWebpackPugPlugin({adjustIndent: true})];
 
 module.exports = {
     entry: './src/menu.js',
-    mode: 'development',
+    mode: 'production',
     devServer: {
     static: './docs'
   },
